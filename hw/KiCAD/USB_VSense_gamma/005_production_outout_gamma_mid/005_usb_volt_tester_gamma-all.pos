@@ -1,0 +1,41 @@
+### Footprint positions - created on 2024-07-25T20:27:11+0200 ###
+### Printed by KiCad version 8.0.4
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val               Package                                     PosX       PosY       Rot  Side
+C1        2.2u              C_0805_2012Metric                        10.6680    12.1160  180.0000  bottom
+C2        2.2u              C_0805_2012Metric                        10.6680    14.1480  180.0000  bottom
+C3        2.2u              C_0805_2012Metric                         7.1120    16.9420  -90.0000  bottom
+C4        3.9n              C_0603_1608Metric                         6.6040    13.7030   90.0000  bottom
+C5        3.9n              C_0603_1608Metric                         5.0800    10.6550  -90.0000  bottom
+C6        100n              C_0603_1608Metric                         9.3980    19.5580    0.0000  bottom
+D10       BAT54C            SOT-23                                    5.4610    20.4470    0.0000  bottom
+R1        1.2k              R_0603_1608Metric                         4.9530    22.9870  180.0000  bottom
+R2        1.5k              R_0603_1608Metric                        13.0810    20.4470  -90.0000  bottom
+R3        750               R_0603_1608Metric                         4.9530    24.5110  180.0000  bottom
+R4        2.2k              R_0603_1608Metric                        13.3350    26.7970   90.0000  bottom
+R5        4.3k              R_0603_1608Metric                         4.1910    26.7970   90.0000  bottom
+R6        1k                R_0603_1608Metric                         5.7150    26.7970   90.0000  bottom
+R7        560               R_0603_1608Metric                        11.8110    26.7970   90.0000  bottom
+R8        1k                R_0603_1608Metric                         7.2390    26.7970   90.0000  bottom
+R9        3.9k              R_0603_1608Metric                         8.7630    26.7970   90.0000  bottom
+R10       680               R_0603_1608Metric                        10.2870    26.7970   90.0000  bottom
+R11       22                R_0805_2012Metric                        10.6680    10.0840    0.0000  bottom
+R12       220               R_0603_1608Metric                        13.0810    23.4950  -90.0000  bottom
+R13       82k               R_0603_1608Metric                         8.1280    10.6550   90.0000  bottom
+R14       20k               R_0603_1608Metric                         8.1280    13.7030   90.0000  bottom
+R15       110k              R_0603_1608Metric                         6.6040    10.6550   90.0000  bottom
+R16       10k               R_0603_1608Metric                         5.0800    13.7030   90.0000  bottom
+U1        ATtiny406-M       VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm      9.6520    22.4790   90.0000  bottom
+U2        MCP1792x-5002xCB  SOT-23A                                  10.2870    16.9420    0.0000  bottom
+D1        LED_RED           LED_0603_1608Metric                       5.8420    11.0470    0.0000  top
+D2        LED_ORANGE        LED_0603_1608Metric                      12.1920    14.8570    0.0000  top
+D3        LED_YELLOW        LED_0603_1608Metric                       5.8420    18.6670    0.0000  top
+D4        LED_GREEN         LED_0603_1608Metric                      12.1920    22.4770    0.0000  top
+D5        LED_Dual_AKKA     LED_Kingbright_APHBM2012_2x1.25mm         5.8420    26.2870  -90.0000  top
+D6        LED_BLUE          LED_0603_1608Metric                      12.1920    30.0970    0.0000  top
+D7        LED_Dual_KAAK     LED_Kingbright_APHBM2012_2x1.25mm         5.8420    33.9070   90.0000  top
+D8        LED_WHITE         LED_0603_1608Metric                      12.1920    37.7170    0.0000  top
+J1        USB_C_Receptacle  USB_C_Receptacle_JAE_DX07S016JA1R1500     9.1420     3.1000    0.0000  top
+P1        USB_C_Plug        USB_C_Plug_JAE_DX07P024AJ5                9.1440    42.9240  180.0000  top
+## End

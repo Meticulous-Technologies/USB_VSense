@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "005_usb_volt_tester")(type "KiCad")(uri "${KIPRJMOD}/library/footprints/005_usb_volt_tester.pretty")(options "")(descr ""))
+)

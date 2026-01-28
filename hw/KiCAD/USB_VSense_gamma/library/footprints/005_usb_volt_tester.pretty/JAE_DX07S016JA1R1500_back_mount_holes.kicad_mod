@@ -1,0 +1,187 @@
+(footprint "JAE_DX07S016JA1R1500_back_mount_holes"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "JAE_DX07S016JA1R1500_back_mount_holes")
+	(property "Reference" "x"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "704eff29-7811-4a41-8066-b8d36f2d6346")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5e43760b-b2bf-420c-acfa-6b72aaccbaf0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "JAE_DX07S016JA1R1500_back_mount_holes"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "027b6e3d-533b-44ae-a902-ca74398aff29")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e8e130d-5f5b-40a1-8d11-93c6dd4ab4b1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "JAE_DX07S016JA1R1500_back_mount_holes"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "19536fd2-a079-4dcb-beb5-74d5cb95d887")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Manufacturer" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a3abcf7-aac8-40f4-81c9-f5ed6f115725")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mfg Part #" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0dd8053c-8bba-48a7-aae8-3ed870314ad2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package/Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c01573d-3e31-4735-b45e-949d378208f5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Tolerance" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7cee48eb-ac5d-4e64-aa5e-dca93e4fe6ff")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Your Instructions / Notes" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8bdc7d46-28c4-4f57-a24f-9479fb940ef8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.27 0)
+		(end 1.397 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "346e0795-d68d-4028-9465-2e67f5c4e499")
+	)
+	(fp_line
+		(start 0 -1.397)
+		(end 0 1.143)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "af1ef53f-1f35-478b-8d28-8154d2c226cc")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "8155d703-6710-4937-8826-aeecdda57999")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole oval
+		(at -4.32 -2.675)
+		(size 0.6 1.6)
+		(drill oval 0.6 1.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "7b31dac2-5103-4c0c-a1e9-8c56528c359e")
+	)
+	(pad "" np_thru_hole oval
+		(at -4.32 1.15)
+		(size 0.6 1.9)
+		(drill oval 0.6 1.9)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "4e697360-4173-4eb5-b913-87c092428b2f")
+	)
+	(pad "" np_thru_hole oval
+		(at 4.32 -2.675)
+		(size 0.6 1.6)
+		(drill oval 0.6 1.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "776ff7f0-3e5f-401f-bf13-62e003b653f4")
+	)
+	(pad "" np_thru_hole oval
+		(at 4.32 1.15)
+		(size 0.6 1.9)
+		(drill oval 0.6 1.9)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "db9b92e4-ae40-484c-9fde-6de501384029")
+	)
+)

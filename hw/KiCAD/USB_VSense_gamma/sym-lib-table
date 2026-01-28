@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "005_usb_volt_tester")(type "KiCad")(uri "${KIPRJMOD}/library/symbols/005_usb_volt_tester.kicad_sym")(options "")(descr ""))
+)
