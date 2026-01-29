@@ -5,9 +5,9 @@
 	(uuid "d93f0b6c-67cd-499b-ab82-672be6a47366")
 	(paper "A4")
 	(title_block
-		(title "USB-C Voltage Indicator")
-		(date "12-June-2024")
-		(rev "Beta")
+		(title "USB VSense")
+		(date "28-January-2026")
+		(rev "Gamma")
 		(company "Meticulous Technologies")
 	)
 	(lib_symbols
