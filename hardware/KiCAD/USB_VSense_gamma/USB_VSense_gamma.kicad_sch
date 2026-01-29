@@ -9,6 +9,7 @@
 		(date "28-January-2026")
 		(rev "Gamma")
 		(company "Meticulous Technologies")
+		(comment 1 "Copyright (C) 2026 Meticulous Technologies Licensed under CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "005_usb_volt_tester:LED_Dual_KAAK"
@@ -5656,8 +5657,8 @@
 		(uuid "fd97bbc5-af86-4ad4-9d30-ea6462dccdca")
 	)
 	(image
-		(at 269.24 173.99)
-		(scale 0.0954022)
+		(at 188.1421 171.0386)
+		(scale 0.0638334)
 		(uuid "dca39bf8-e706-435c-9a71-03373dd53b82")
 		(data "iVBORw0KGgoAAAANSUhEUgAABR0AAAJYCAYAAADvzkG7AAAACXBIWXMAABAbAAAQGwFRuhDYAAAA"
 			"GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAIABJREFUeJzs3Xd4VGX2B/Dv1GSS"
