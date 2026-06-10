@@ -8,7 +8,7 @@ build/Copy_of_default/debug/main.o.d build/Copy_of_default/debug/main.o: \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\stdint.h \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\bits\alltypes.h \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\bits\stdint.h \
- C:/Program\ Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/include/avr/iotn406.h \
+ C:/Program\ Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/include/avr/iotn406.h \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\avr\portpins.h \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\avr\common.h \
  c:\program\ files\microchip\xc8\v2.46\avr\avr\include\avr\xmega.h \
@@ -41,7 +41,7 @@ c:\program\ files\microchip\xc8\v2.46\avr\avr\include\bits\alltypes.h:
 
 c:\program\ files\microchip\xc8\v2.46\avr\avr\include\bits\stdint.h:
 
-C:/Program\ Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/include/avr/iotn406.h:
+C:/Program\ Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/include/avr/iotn406.h:
 
 c:\program\ files\microchip\xc8\v2.46\avr\avr\include\avr\portpins.h:
 

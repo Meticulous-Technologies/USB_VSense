@@ -3,18 +3,18 @@ Archive member included to satisfy reference by file (symbol)
 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_copy_data.o)
                               build/Copy_of_default/debug/main.o (__do_copy_data)
 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(exit.o)
-                              C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o (exit)
+                              C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o (exit)
 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(_Exit.o)
                               c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(exit.o) (_Exit)
-C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
                               build/Copy_of_default/debug/main.o (ccp_write_io)
 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
                               c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(_Exit.o) (_exit)
 
 Discarded input sections
 
- .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
- .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  .text          0x0000000000000000        0x0 build/Copy_of_default/debug/gpio.o
  .data          0x0000000000000000        0x0 build/Copy_of_default/debug/gpio.o
  .bss           0x0000000000000000        0x0 build/Copy_of_default/debug/gpio.o
@@ -47,11 +47,11 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(_Exit.o)
  .stack.descriptors
                 0x0000000000000000       0x13 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(_Exit.o)
- .text          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
- .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
- .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .text          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
  .stack.descriptors
-                0x0000000000000000       0x1a C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+                0x0000000000000000       0x1a C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
@@ -88,7 +88,7 @@ Linker script and memory map
 
 Address of section .data set to 0x803f00
                 0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
-LOAD C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+LOAD C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
 LOAD build/Copy_of_default/debug/gpio.o
 LOAD build/Copy_of_default/debug/main.o
@@ -97,11 +97,12 @@ LOAD c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../
 END GROUP
                 0x0000000000000001                __MPLAB_DEBUG = 0x1
                 0x0000000000000001                __DEBUG = 0x1
+                0x0000000000000001                __MPLAB_DEBUGGER_PK4 = 0x1
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a
 LOAD c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libm.a
 LOAD c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a
-LOAD C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a
+LOAD C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a
 END GROUP
                 [0x0000000000000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x0000000000803f00]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
@@ -207,7 +208,7 @@ END GROUP
 
 .text           0x0000000000000000       0x8a
  *(.vectors)
- .vectors       0x0000000000000000       0x34 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .vectors       0x0000000000000000       0x34 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
                 0x0000000000000000                __vector_default
                 0x0000000000000000                __vectors
  *(.vectors)
@@ -237,13 +238,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000000000003a        0x0 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .init0         0x000000000000003a        0x0 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
                 0x000000000000003a                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000000000003a        0xc C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .init2         0x000000000000003a        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -261,7 +262,7 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x0000000000000082        0x4 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .init9         0x0000000000000082        0x4 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  *(.init9)
                 0x0000000000000086                . = ALIGN (0x2)
  *(.fini9)
@@ -369,7 +370,7 @@ END GROUP
  .stack.descriptors.hdr
                 0x000000000000000e        0xe c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3/short-calls\libc.a(_Exit.o)
  .stack.descriptors.hdr
-                0x000000000000001c        0xe C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+                0x000000000000001c        0xe C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
  .stack.descriptors.hdr
                 0x000000000000002a        0xe c:/program files/microchip/xc8/v2.46/avr/bin/../lib/gcc/avr/5.4.0/avrxmega3/short-calls\libgcc.a(_exit.o)
 
@@ -402,31 +403,31 @@ END GROUP
  .debug_aranges
                 0x0000000000000020       0x38 build/Copy_of_default/debug/main.o
  .debug_aranges
-                0x0000000000000058       0x20 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+                0x0000000000000058       0x20 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
 .debug_info     0x0000000000000000     0x3bf6
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000     0x178d C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .debug_info    0x0000000000000000     0x178d C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  .debug_info    0x000000000000178d      0x520 build/Copy_of_default/debug/gpio.o
  .debug_info    0x0000000000001cad     0x1e8e build/Copy_of_default/debug/main.o
- .debug_info    0x0000000000003b3b       0xbb C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .debug_info    0x0000000000003b3b       0xbb C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
 
 .debug_abbrev   0x0000000000000000     0x19ce
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000     0x1648 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .debug_abbrev  0x0000000000000000     0x1648 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  .debug_abbrev  0x0000000000001648       0xa4 build/Copy_of_default/debug/gpio.o
  .debug_abbrev  0x00000000000016ec      0x2ce build/Copy_of_default/debug/main.o
- .debug_abbrev  0x00000000000019ba       0x14 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .debug_abbrev  0x00000000000019ba       0x14 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
 
 .debug_line     0x0000000000000000      0xd43
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000      0x136 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .debug_line    0x0000000000000000      0x136 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  .debug_line    0x0000000000000136      0x1ba build/Copy_of_default/debug/gpio.o
  .debug_line    0x00000000000002f0      0x9e9 build/Copy_of_default/debug/main.o
- .debug_line    0x0000000000000cd9       0x6a C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .debug_line    0x0000000000000cd9       0x6a C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
 
 .debug_frame    0x0000000000000000       0xe8
  *(.debug_frame)
@@ -435,7 +436,7 @@ END GROUP
 
 .debug_str      0x0000000000000000      0xa0e
  *(.debug_str)
- .debug_str     0x0000000000000000      0x9c7 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .debug_str     0x0000000000000000      0x9c7 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
  .debug_str     0x00000000000009c7        0x0 build/Copy_of_default/debug/gpio.o
  .debug_str     0x00000000000009c7       0x47 build/Copy_of_default/debug/main.o
 
@@ -475,7 +476,7 @@ LOAD data_init
 .note.gnu.avr.deviceinfo
                 0x0000000000000000       0x3c
  .note.gnu.avr.deviceinfo
-                0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+                0x0000000000000000       0x3c C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
 
 .bss.tgl_pin_bm
                 0x0000000000803f04        0x1
@@ -525,11 +526,11 @@ LOAD data_init
                 0x0000000000000dfc                exit
 
 .text.avrlibc   0x0000000000000e0a        0xc
- .text.avrlibc  0x0000000000000e0a        0xc C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
+ .text.avrlibc  0x0000000000000e0a        0xc C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls\libattiny406.a(ccp_write.o)
                 0x0000000000000e0a                ccp_write_io
 
 .text           0x0000000000000e16        0x2
- .text          0x0000000000000e16        0x2 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/ATtiny_DFP/3.1.260/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
+ .text          0x0000000000000e16        0x2 C:/Program Files/Microchip/MPLABX/v6.30/packs/Microchip/ATtiny_DFP/3.3.272/xc8/avr/lib/avrxmega3/short-calls/crtattiny406.o
                 0x0000000000000e16                __vector_22
                 0x0000000000000e16                __vector_1
                 0x0000000000000e16                __vector_24
