@@ -1,38 +1,38 @@
 ﻿Item,Designator,Qty per unit,Fit,Board,Value,Description,Footprint,Manufacturer (design),MPN (design),Manufacturer (Rev.1 run),MPN (Rev.1 run),Notes
-1,"C1, C2",2,Yes,Main PCBA,2.2u,"Capacitor, MLCC, X7R, 100 V",C_0805_2012Metric,Murata,GRM21BD72A225KE01L,Murata,GRM21BD72A225KE01L,Part number was sent to PCBWay with a typo (RM21BD72A225KE01L); purchased part confirmed as GRM21BD72A225KE01L
-2,C3,1,Yes,Main PCBA,2.2u,"Capacitor, MLCC, X5R, 16 V",C_0805_2012Metric,Samsung Electro-Mechanics,CL21B225KOFNNNE,Samsung Electro-Mechanics,CL21B225KOFNNNE,
-3,"C4, C5",2,Yes,Main PCBA,3.9n,"Capacitor, MLCC, 0603",C_0603_1608Metric,KEMET (schematic says Samsung),C0603C392K4RAC7867,Samsung Electro-Mechanics,CL10B392KB8NNNC,Substitute approved by Meticulous Technologies in the 2026-03-26 quote reply. Schematic Manufacturer field is wrong: C0603C... is KEMET numbering
-4,C6,1,Yes,Main PCBA,100n,"Capacitor, MLCC, 0603",C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KO8NNNC,Samsung Electro-Mechanics,CL10B104JB8NNNC,Rev.1 run used CL10B104JB8NNNC (approved in quote reply)
-5,D1,1,Yes,Main PCBA,LED RED,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSECK/J3-PRV,Kingbright,APT1608LSECK/J3-PRV,
-6,D2,1,Yes,Main PCBA,LED ORANGE,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSECK/J4-PRV,Kingbright,APT1608LSECK/J4-PRV,
-7,D3,1,Yes,Main PCBA,LED YELLOW,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSYCK/J3-PRV,Kingbright,APT1608LSYCK/J3-PRV,
-8,D4,1,Yes,Main PCBA,LED GREEN,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LZGCK,Kingbright,APT1608LZGCK,
-9,D5,1,Yes,Main PCBA,LED_Dual_AKKA,"Bi-colour LED, 2.0 x 1.25 mm",LED_Kingbright_APHBM2012_2x1.25mm,Kingbright,APHBM2012LVBDZGKC,Kingbright,APHBM2012LVBDZGKC,No substitute listed in quote. Orientation: polarity mark aligns with cathode (C) marking on PCB
-10,D6,1,Yes,Main PCBA,LED BLUE,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LVBC/D,Kingbright,APT1608LVBC/D,
-11,D7,1,Yes,Main PCBA,LED_Dual_KAAK,"Bi-colour LED, 2.0 x 1.25 mm",LED_Kingbright_APHBM2012_2x1.25mm,Kingbright,APHBM2012LVBDSEKJ3C,Kingbright,APHBM2012LVBDSEKJ3C,No substitute listed in quote. Orientation: polarity mark corresponds to anode (A) marking on PCB
-12,D8,1,Yes,Main PCBA,LED WHITE,"LED, 0603",LED_0603_1608Metric,ams OSRAM,LW Q38E-Q1OO-3K6L-1-5-R18,ams OSRAM,LW Q38E-Q1OO-3K6L-1-5-R18,
-13,D10,1,Yes,Main PCBA,BAT54C,"Schottky diode pair, common cathode, SOT-23",SOT-23,(not set in schematic),(not set in schematic),UMW,BAT54C,Any BAT54C works; UMW alternative approved in the 2026-03-26 quote reply. Schematic Manufacturer/MPN fields need fixing
-14,J1,1,Yes,Main PCBA,USB_C_Receptacle,"USB Type-C receptacle, USB 2.0, 16P",USB_C_Receptacle_JAE_DX07S016JA1R1500,JAE Electronics,DX07S016JA1R1500,JAE Electronics,DX07S016JA1R1500,
-15,P1,1,Yes,Main PCBA,USB_C_Plug,USB Type-C plug,USB_C_Plug_JAE_DX07P024AJ5,JAE Electronics,DX07P024AJ5R1500,JAE Electronics,DX07P024AJ5R1500,Shield must be properly soldered to the PCB tab
-16,J2,1,No (DNP),Main PCBA,UPDI,UPDI programming pads,Conn_AVR_UPDI,,,,,"Footprint only, used for programming; excluded from BOM in schematic"
-17,R1,1,Yes,Main PCBA,1.2k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071K2L,YAGEO,RC0603FR-071K2L,
-18,"R2, R6",2,Yes,Main PCBA,1.5k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071K5L,YAGEO,RC0603FR-071K5L,
-19,R3,1,Yes,Main PCBA,750,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07750RL,YAGEO,RC0603FR-07750RL,
-20,R4,1,Yes,Main PCBA,2.2k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-072K2L,YAGEO,RC0603FR-072K2L,
-21,R5,1,Yes,Main PCBA,3.6k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-073K6L,UNCONFIRMED,UNCONFIRMED,Final quote leaves the purchased part blank. YAGEO RC0603FR-073K6L was requested; PCBWay offered Vishay CRCW06033K60FKEA
-22,R7,1,Yes,Main PCBA,560,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07560RL,YAGEO,RC0603FR-07560RL,
-23,R8,1,Yes,Main PCBA,1k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071KL,YAGEO,RC0603FR-071KL,
-24,R9,1,Yes,Main PCBA,3.9k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-073K9L,UNCONFIRMED,UNCONFIRMED,Final quote leaves the purchased part blank. Requested RC0603FR-073K9L; PCBWay offered RC0603FR-073K9P (YAGEO)
-25,R10,1,Yes,Main PCBA,680,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07680RL,YAGEO,RC0603FR-07680RL,
-26,R11,1,Yes,Main PCBA,22,"Resistor, 1%, 0805",R_0805_2012Metric,YAGEO,RC0805FR-0722RL,YAGEO,RC0805FR-0722RL,"0805, not 0603"
-27,R12,1,Yes,Main PCBA,220,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07220RL,YAGEO,RC0603FR-07220RL,
-28,R13,1,Yes,Main PCBA,82k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0782KL,YAGEO,RC0603FR-0782KL,Voltage divider (low range)
-29,R14,1,Yes,Main PCBA,20k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0720KL,UNCONFIRMED,UNCONFIRMED,Voltage divider (low range). Final quote leaves the purchased part blank. Requested RC0603FR-0720KL; PCBWay offered Vishay CRCW060320K0FKEA
-30,R15,1,Yes,Main PCBA,110k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07110KL,YAGEO,RC0603FR-07110KL,Voltage divider (high range)
-31,R16,1,Yes,Main PCBA,10k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0710KL,YAGEO,RC0603FR-0710KL,Voltage divider (high range)
-32,U1,1,Yes,Main PCBA,ATtiny406-M,"MCU, AVR, VQFN-20 3x3 mm",VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm,Microchip Technology,ATTINY406-MNR,Microchip Technology,ATTINY406-MNR,Program over UPDI with the firmware HEX (fuses are embedded in the HEX)
-33,U2,1,Yes,Main PCBA,MCP1792-5.0,"LDO regulator, 5.0 V, high input voltage",SOT-23A,Microchip Technology,MCP1792T-5002H/CB,Microchip Technology,MCP1792T-5002H/CB,
-34,"H1, H2, H3, H4",4,Yes,Stack panel (boards 2-7),M1.6 nut,"SMT steel spacer with M1.6 internal thread, 1.5 mm",Mounting_Wuerth_WA-SMSI-M1.6_H1.5mm_9774015633,Würth Elektronik,9774015633R,Würth Elektronik,9774015633R,Assembled on the stack panel (PCBWay T-1N88W470267A). Marked DNP on the main PCBA order (T-1N86W470267A)
-35,PCB1,1,Yes,Main PCBA,Main PCB,"4-layer, 0.78 mm, immersion gold, 18.4 x 47.6 mm",,,,PCBWay,W470267AS1N85,Gerbers: gerbers/main_pcba/
-36,PCB2,1,Yes,Stack panel (boards 2-7),Stack panel,"4-layer, 0.78 mm, immersion gold, 120.0 x 47.6 mm, 6 boards",,,,PCBWay,W470267AS1N87,Gerbers: gerbers/stack_panel/
-37,SCR1,,Yes,Mechanical,M1.6 screw,"Machine screw, M1.6",,TODO,TODO,TODO,TODO,"TODO (Sparsh): quantity, length and head type. Not in any PCBWay quote"
+1,"C1, C2",2,Yes,Main PCBA (board 4/7),2.2u,"Capacitor, MLCC, X7R, 100 V",C_0805_2012Metric,Murata,GRM21BD72A225KE01L,Murata,GRM21BD72A225KE01L,Part number was ordered with a typo (RM21BD72A225KE01L); purchased part confirmed as GRM21BD72A225KE01L
+2,C3,1,Yes,Main PCBA (board 4/7),2.2u,"Capacitor, MLCC, X5R, 16 V",C_0805_2012Metric,Samsung Electro-Mechanics,CL21B225KOFNNNE,Samsung Electro-Mechanics,CL21B225KOFNNNE,
+3,"C4, C5",2,Yes,Main PCBA (board 4/7),3.9n,"Capacitor, MLCC, 0603",C_0603_1608Metric,KEMET (schematic says Samsung),C0603C392K4RAC7867,Samsung Electro-Mechanics,CL10B392KB8NNNC,Approved substitute used in the Rev. 1 run. Schematic Manufacturer field is wrong: C0603C... is KEMET numbering
+4,C6,1,Yes,Main PCBA (board 4/7),100n,"Capacitor, MLCC, 0603",C_0603_1608Metric,Samsung Electro-Mechanics,CL10B104KO8NNNC,Samsung Electro-Mechanics,CL10B104JB8NNNC,Rev. 1 run used CL10B104JB8NNNC (approved substitute)
+5,D1,1,Yes,Main PCBA (board 4/7),LED RED,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSECK/J3-PRV,Kingbright,APT1608LSECK/J3-PRV,
+6,D2,1,Yes,Main PCBA (board 4/7),LED ORANGE,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSECK/J4-PRV,Kingbright,APT1608LSECK/J4-PRV,
+7,D3,1,Yes,Main PCBA (board 4/7),LED YELLOW,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LSYCK/J3-PRV,Kingbright,APT1608LSYCK/J3-PRV,
+8,D4,1,Yes,Main PCBA (board 4/7),LED GREEN,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LZGCK,Kingbright,APT1608LZGCK,
+9,D5,1,Yes,Main PCBA (board 4/7),LED_Dual_AKKA,"Bi-colour LED, 2.0 x 1.25 mm",LED_Kingbright_APHBM2012_2x1.25mm,Kingbright,APHBM2012LVBDZGKC,Kingbright,APHBM2012LVBDZGKC,Orientation: polarity mark aligns with cathode (C) marking on PCB
+10,D6,1,Yes,Main PCBA (board 4/7),LED BLUE,"LED, 0603",LED_0603_1608Metric,Kingbright,APT1608LVBC/D,Kingbright,APT1608LVBC/D,
+11,D7,1,Yes,Main PCBA (board 4/7),LED_Dual_KAAK,"Bi-colour LED, 2.0 x 1.25 mm",LED_Kingbright_APHBM2012_2x1.25mm,Kingbright,APHBM2012LVBDSEKJ3C,Kingbright,APHBM2012LVBDSEKJ3C,Orientation: polarity mark corresponds to anode (A) marking on PCB
+12,D8,1,Yes,Main PCBA (board 4/7),LED WHITE,"LED, 0603",LED_0603_1608Metric,ams OSRAM,LW Q38E-Q1OO-3K6L-1-5-R18,ams OSRAM,LW Q38E-Q1OO-3K6L-1-5-R18,
+13,D10,1,Yes,Main PCBA (board 4/7),BAT54C,"Schottky diode pair, common cathode, SOT-23",SOT-23,(not set in schematic),(not set in schematic),UMW,BAT54C,Any BAT54C works; UMW alternative approved for the Rev. 1 run. Schematic Manufacturer/MPN fields need fixing
+14,J1,1,Yes,Main PCBA (board 4/7),USB_C_Receptacle,"USB Type-C receptacle, USB 2.0, 16P",USB_C_Receptacle_JAE_DX07S016JA1R1500,JAE Electronics,DX07S016JA1R1500,JAE Electronics,DX07S016JA1R1500,
+15,P1,1,Yes,Main PCBA (board 4/7),USB_C_Plug,USB Type-C plug,USB_C_Plug_JAE_DX07P024AJ5,JAE Electronics,DX07P024AJ5R1500,JAE Electronics,DX07P024AJ5R1500,Shield must be properly soldered to the PCB tab
+16,J2,1,No (DNP),Main PCBA (board 4/7),UPDI,UPDI programming pads,Conn_AVR_UPDI,,,,,"Footprint only, used for programming; excluded from BOM in schematic"
+17,R1,1,Yes,Main PCBA (board 4/7),1.2k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071K2L,YAGEO,RC0603FR-071K2L,
+18,"R2, R6",2,Yes,Main PCBA (board 4/7),1.5k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071K5L,YAGEO,RC0603FR-071K5L,
+19,R3,1,Yes,Main PCBA (board 4/7),750,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07750RL,YAGEO,RC0603FR-07750RL,
+20,R4,1,Yes,Main PCBA (board 4/7),2.2k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-072K2L,YAGEO,RC0603FR-072K2L,
+21,R5,1,Yes,Main PCBA (board 4/7),3.6k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-073K6L,UNCONFIRMED,UNCONFIRMED,Final quotation leaves the purchased part blank. YAGEO RC0603FR-073K6L was requested; Vishay CRCW06033K60FKEA was offered as substitute
+22,R7,1,Yes,Main PCBA (board 4/7),560,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07560RL,YAGEO,RC0603FR-07560RL,
+23,R8,1,Yes,Main PCBA (board 4/7),1k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-071KL,YAGEO,RC0603FR-071KL,
+24,R9,1,Yes,Main PCBA (board 4/7),3.9k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-073K9L,UNCONFIRMED,UNCONFIRMED,Final quotation leaves the purchased part blank. Requested RC0603FR-073K9L; YAGEO RC0603FR-073K9P was offered as substitute
+25,R10,1,Yes,Main PCBA (board 4/7),680,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07680RL,YAGEO,RC0603FR-07680RL,
+26,R11,1,Yes,Main PCBA (board 4/7),22,"Resistor, 1%, 0805",R_0805_2012Metric,YAGEO,RC0805FR-0722RL,YAGEO,RC0805FR-0722RL,"0805, not 0603"
+27,R12,1,Yes,Main PCBA (board 4/7),220,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07220RL,YAGEO,RC0603FR-07220RL,
+28,R13,1,Yes,Main PCBA (board 4/7),82k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0782KL,YAGEO,RC0603FR-0782KL,Voltage divider (low range)
+29,R14,1,Yes,Main PCBA (board 4/7),20k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0720KL,UNCONFIRMED,UNCONFIRMED,Voltage divider (low range). Final quotation leaves the purchased part blank. Requested RC0603FR-0720KL; Vishay CRCW060320K0FKEA was offered as substitute
+30,R15,1,Yes,Main PCBA (board 4/7),110k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-07110KL,YAGEO,RC0603FR-07110KL,Voltage divider (high range)
+31,R16,1,Yes,Main PCBA (board 4/7),10k,"Resistor, 1%, 0603",R_0603_1608Metric,YAGEO,RC0603FR-0710KL,YAGEO,RC0603FR-0710KL,Voltage divider (high range)
+32,U1,1,Yes,Main PCBA (board 4/7),ATtiny406-M,"MCU, AVR, VQFN-20 3x3 mm",VQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm,Microchip Technology,ATTINY406-MNR,Microchip Technology,ATTINY406-MNR,Program over UPDI with the firmware HEX (fuses are embedded in the HEX)
+33,U2,1,Yes,Main PCBA (board 4/7),MCP1792-5.0,"LDO regulator, 5.0 V, high input voltage",SOT-23A,Microchip Technology,MCP1792T-5002H/CB,Microchip Technology,MCP1792T-5002H/CB,
+34,"H1, H2, H3, H4",4,Yes,Enclosure (board 7/7),M1.6 nut,"SMT steel spacer with M1.6 internal thread, 1.5 mm",Mounting_Wuerth_WA-SMSI-M1.6_H1.5mm_9774015633,Würth Elektronik,9774015633R,Würth Elektronik,9774015633R,"Soldered to enclosure board 7/7 (base), facing up. Not fitted on the main PCBA"
+35,PCB1,1,Yes,Main PCBA (board 4/7),Main PCB (4/7),"4-layer, 0.8 mm, immersion gold, black mask, edge plated; 18.4 x 47.6 mm",,,,,,Gerbers: gerbers/main_pcba/
+36,PCB2,1,Yes,"Enclosure (boards 1/7-3/7, 5/7-7/7)",Enclosure boards,"2-layer, 0.8 mm, immersion gold, black mask, edge plated; 6 boards of 18.3 x 47.5 mm",,,,,,Gerbers: gerbers/enclosure_boards/
+37,SCR1,4,Yes,Mechanical,M1.6 screw,"Machine screw, M1.6, into H1-H4 from the faceplate side",,TODO,TODO,TODO,TODO,"TODO (Sparsh): length, head type, material. Not in any quotation"

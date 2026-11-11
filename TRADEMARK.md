@@ -24,7 +24,7 @@ The design files in this repository (including but not limited to schematics, PC
 * **Commercial Use:** If you manufacture these designs for sale or commercial distribution, you are **legally required to remove** all Meticulous Technologies logos and the "USB VSense" name from the physical object and the manufacturing files before production, unless you have obtained explicit written permission from us.
 
 ## 4. Third-Party Marks
-The PCB artwork also contains third-party marks that are not ours to license, including the PCBWay logo (`pcbway_logo.kicad_mod`, shown with the "PCBs and assembly service by:" text on board 7/7). The open-source licenses do not grant any right to these marks either. Remove them before manufacturing a derivative or commercial product unless you have the owner's permission.
+The Gamma PCB artwork also contains a third-party PCB manufacturer's logo, which is not ours to license. The open-source licenses do not grant any right to it either. Remove it before manufacturing a derivative or commercial product unless you have the owner's permission.
 
 ## Summary
 * **Code/Design:** Open for everyone (under CERN-OHL-S / GPL v3).
