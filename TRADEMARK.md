@@ -18,10 +18,13 @@ If you create a derivative work (modified hardware or software) or manufacture t
 3.  **You MUST remove** the Meticulous Technologies logo and the "USB VSense" name from any physical products, software user interfaces, and marketing assets if you are distributing a modified version or a commercial product that is not authorized by us.
 
 ## 3. Manufacturing and Physical Goods
-The design files in this repository (including but not limited to schematics, PCB layouts, mechanical drawings, and 3D models) may contain the Meticulous Technologies logo or the "USB VSense" name.
+The design files in this repository (including but not limited to schematics, PCB layouts, and silkscreen / solder-mask artwork) may contain the Meticulous Technologies logo or the "USB VSense" name.
 
 * **Personal Use:** If you manufacture these designs strictly for personal use, research, or study, you need not remove the trademarks.
 * **Commercial Use:** If you manufacture these designs for sale or commercial distribution, you are **legally required to remove** all Meticulous Technologies logos and the "USB VSense" name from the physical object and the manufacturing files before production, unless you have obtained explicit written permission from us.
+
+## 4. Third-Party Marks
+The PCB artwork also contains third-party marks that are not ours to license, including the PCBWay logo (`pcbway_logo.kicad_mod`, shown with the "PCBs and assembly service by:" text on board 7/7). The open-source licenses do not grant any right to these marks either. Remove them before manufacturing a derivative or commercial product unless you have the owner's permission.
 
 ## Summary
 * **Code/Design:** Open for everyone (under CERN-OHL-S / GPL v3).

@@ -1,0 +1,25 @@
+USB VSense
+Copyright Meticulous Technologies 2026.
+
+HARDWARE (hardware/)
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+You may redistribute and modify this source and make products using it under
+the terms of the CERN-OHL-S v2 (https://cern.ch/cern-ohl).
+This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING
+OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN-OHL-S v2 for applicable conditions.
+
+Source location: https://github.com/Meticulous-Technologies/USB_VSense
+
+As per CERN-OHL-S v2 section 4, should You produce hardware based on this
+source, You must display the Source Location visibly on the product, its
+packaging or its documentation.
+
+FIRMWARE (firmware/)  - GNU General Public License v3, see firmware/LICENSE_FIRMWARE.txt
+DOCUMENTATION (docs/) - CC BY-SA 4.0, see https://creativecommons.org/licenses/by-sa/4.0/
+
+OSHWA certification UID: NL000037 (https://certification.oshwa.org/nl000037.html)
+
+Trademarks: see TRADEMARK.md. The licences above grant no rights to the
+"Meticulous Technologies" or "USB VSense" names or logos, or to third-party
+marks contained in the artwork.

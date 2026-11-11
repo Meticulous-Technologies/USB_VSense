@@ -1,0 +1,44 @@
+# ---- KiCad ----
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+_autosave-*
+plots/
+*.lck
+~*.lck
+\#auto_saved_files\#
+
+# KiCad 10 local history (contains a nested git repo)
+.history/
+
+# 3D models are deliberately not published (third-party licensing)
+**/3dmodels/
+*.step
+*.STEP
+*.stp
+*.wrl
+
+# Generated netlists
+*.net
+
+# ---- MPLAB X / XC8 build output ----
+firmware/**/build/
+firmware/**/dist/
+firmware/**/debug/
+firmware/**/disassembly/
+firmware/**/.generated_files/
+firmware/**/queuelogs/
+firmware/**/nbproject/private/
+firmware/**/nbproject/Makefile-genesis.properties
+*.o
+firmware/**/*.zip
+*.o.d
+
+# ---- OS / editor ----
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
