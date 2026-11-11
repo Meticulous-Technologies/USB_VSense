@@ -71,7 +71,7 @@ hardware/KiCAD/USB_VSense_gamma/       Gamma: the OSHWA-certified release, kept 
 hardware/LICENSE_HARDWARE.txt          CERN-OHL-S-2.0
 firmware/MPLABX/usb_vsense_r1_2.X/            MPLAB X project, firmware v1.2 (main.c, gpio.c)
 firmware/LICENSE_FIRMWARE.txt          GPL v3
-docs/schematics/                       schematic PDFs
+docs/schematics/USB_VSense_gamma.pdf   schematic (applies to Gamma and Rev. 1)
 docs/*DECLARATION OF CONFORMITY*.pdf   EU / UK declarations of conformity
 docs/USB_VSENSE_SAFETY_GUIDE_EN_DE_FR_NL.pdf   safety guide
 ```
@@ -80,20 +80,27 @@ docs/USB_VSENSE_SAFETY_GUIDE_EN_DE_FR_NL.pdf   safety guide
 
 ## Building the hardware
 
-**To have boards made, use [`production/rev1/`](production/rev1/).** It holds the Gerbers as fabricated, a complete BOM (including the M1.6 nuts, PCBs and the parts actually used in the Rev. 1 run), and the firmware HEX. The same files are attached as zips to the GitHub Release.
+**To have boards made, use [`production/rev1/`](production/rev1/).** It holds the Gerbers as fabricated, a complete BOM (including the M1.6 nuts, PCBs and the parts actually used in the Rev. 1 run), the firmware HEX, and the [assembly instructions](production/rev1/README.md#assembly). The same files are attached as zips to the GitHub Release.
 
-The device is a stack of seven PCBs joined by M1.6 hardware. Four Würth 9774015633R SMT nuts are soldered on the stack panel. All seven boards are drawn in a single `.kicad_pcb`.
+The device is a stack of seven 0.8 mm PCBs, marked 1/7 to 7/7 from top to bottom:
+- **The main board (4/7)** is 4-layer and carries all the electronics.
+- **The six enclosure boards** (faceplate, light guides, spacers and base) are 2-layer.
+
+Four M1.6 screws from the faceplate side thread into four SMT nuts on the base board (7/7). All seven boards are drawn in a single `.kicad_pcb`.
+
+**Schematic:** [`docs/schematics/USB_VSense_gamma.pdf`](docs/schematics/USB_VSense_gamma.pdf). The Rev. 1 schematic is electrically identical to Gamma: same components, values, footprints, part numbers and connections. Only the title block differs.
 
 **KiCad version:** both projects are saved with **KiCad 10** and cannot be opened in KiCad 9.
 
 The Rev. 1 Gerbers were exported with KiCad 9.0.8 before the files were converted to KiCad 10. During conversion KiCad 10 regenerated a few teardrops, so a fresh export differs very slightly from the fabricated boards in teardrop copper. The Gerbers in `production/rev1/` remain the authoritative record of what was built.
 
-> **TODO (Sparsh):**
-> - Explain how the two Gerber sets (main board, 6-board panel) are produced from the single `.kicad_pcb`.
-> - Add the assembly position (centroid) file used for the main PCBA.
-> - Add assembly order and screw spec (length, head type, quantity).
+The fabrication notes (edge plating, tab placement, corner radius) and the PCBA notes for the assembler are in [`production/rev1/README.md`](production/rev1/README.md#fabrication-notes).
 
-> **Warning (Gamma only):** the Gamma `.kicad_pcb` carries `FREE SAMPLE / NOT FOR SALE` as solder-mask artwork and a PCBWay logo on one stack board. Rev. 1 has neither. Build from Rev. 1.
+> **TODO (Sparsh):**
+> - Explain how the two Gerber sets (main board, six enclosure boards) are produced from the single `.kicad_pcb`.
+> - Add the assembly position (centroid) file used for the main PCBA.
+
+> **Warning (Gamma only):** the Gamma `.kicad_pcb` carries `FREE SAMPLE / NOT FOR SALE` as solder-mask artwork and a third-party manufacturer logo on one enclosure board. Rev. 1 has neither. Build from Rev. 1.
 
 ## Building and flashing the firmware
 
