@@ -1,2 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Fabrication and firmware files: store byte-for-byte (no line-ending conversion),
+# so released Gerbers and HEX match their checksums on every platform
+*.gbr     -text
+*.drl     -text
+*.gbrjob  -text
+*.hex     -text
+*.sha256  -text

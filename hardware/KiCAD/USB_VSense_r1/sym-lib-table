@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "USB_VSense") (type "KiCad") (uri "${KIPRJMOD}/library/symbols/USB_VSense.kicad_sym") (options "") (descr ""))
+)
