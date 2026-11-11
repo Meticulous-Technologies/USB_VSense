@@ -643,7 +643,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "005_usb_volt_tester:WE_632712000112"
+		(property "Footprint" ""
 			(at 3.81 0 0)
 			(effects
 				(font
