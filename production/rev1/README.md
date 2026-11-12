@@ -1,120 +1,115 @@
 # USB VSense Rev. 1: production files
 
-Everything needed to have USB VSense Rev. 1 made and assembled, without opening KiCad or MPLAB.
+The files needed to have USB VSense Rev. 1 made, as used for the March 2026 production run.
 
-| Path | What it is |
+| Path | Contents |
 |---|---|
-| `gerbers/main_pcba/` | Gerbers and drill file for the main board (board 4/7), which carries all the electronics |
-| `gerbers/enclosure_boards/` | Gerbers and drill file for the six enclosure boards (1/7–3/7 and 5/7–7/7), drawn side by side in one set |
-| `BOM_USB_VSense_r1.csv` | Complete BOM: electronics, M1.6 nuts, PCBs and screws |
-| `firmware/` | Production firmware HEX for the ATtiny406, with its SHA-256 checksum (rebuilds byte-identically from the published source) |
+| `gerbers/main_pcba/` | Main board (4/7): 4-layer Gerbers, drill file, job file, and the `User_Comments` layer with a fab instruction |
+| `gerbers/enclosure_boards/` | The six enclosure boards (1/7–3/7, 5/7–7/7), side by side in one 2-layer set: Gerbers and drill file |
+| `BOM_USB_VSense_r1.csv` | Bill of materials for one unit, including the PCBs, mounting nuts and screws |
+| `USB_VSense_r1-all.pos` | Component placement (centroid) file for the main board |
+| `firmware/` | Production firmware HEX for the ATtiny406 and its SHA-256 checksum |
 
-The Gerbers are the files used for the March 2026 production run. Their internal headers still carry the old project name `005_usb_volt_tester_r1`. Zip archives of each Gerber set are attached to the GitHub Release.
+The Gerber and drill files are the files sent to the fab for the March 2026 run. Only the file names have changed: the headers inside still carry the project's old internal name, `005_usb_volt_tester_r1`.
 
-## PCB specification
+## Ordering the PCBs
 
-| | Main PCB (4/7) | Enclosure boards (1/7–3/7, 5/7–7/7) |
+| | Main board (4/7) | Enclosure boards (1/7–3/7, 5/7–7/7) |
 |---|---|---|
-| Size | 18.4 × 47.6 mm | 6 boards of 18.3 × 47.5 mm, drawn side by side (set outline 120.0 × 47.6 mm) |
+| Size | 18.3 × 47.5 mm | Six boards of 18.3 × 47.5 mm with 2.03 mm gaps; set outline 119.9 × 47.5 mm |
 | Layers | **4** | **2** |
 | Thickness | **0.8 mm** | **0.8 mm** |
-| Surface finish | Immersion gold | Immersion gold |
-| Solder mask / silkscreen | Black / white | Black / white |
-| Edge plating | Yes, continuous (see fabrication notes) | Yes, continuous (see fabrication notes) |
-| Assembly | All electronic parts (both sides) | Four M1.6 SMT nuts on board 7/7 only |
+| Material | FR-4, Tg 150 (S1000H was used) | FR-4, Tg 150 (S1000H was used) |
+| Finished copper | 1 oz outer and inner | 1 oz |
+| Min. track / spacing | 6 / 6 mil | 10 / 10 mil |
+| Min. hole | 0.3 mm | 0.3 mm |
+| Surface finish | ENIG (immersion gold) | ENIG (immersion gold) |
+| Solder mask / silkscreen | Black / white | Matt black / white |
+| Vias | Tented | Tented |
+| Edge plating | Yes | Yes |
+| Panelisation used | By the fab, 5 × 2 per panel | None (single pieces) |
 
-Notes on the files:
-- **The enclosure boards are 2-layer.** The KiCad project uses one 4-layer stackup for all seven boards, so KiCad also exported empty inner-layer Gerbers for the enclosure set, plus a job file that says 4 layers. Those files were sent with the order, and the fab was told to ignore the inner layers. They have been removed from `gerbers/enclosure_boards/` so the set can't be quoted as 4-layer by mistake.
-- **The main board's job file says 0.78 mm.** That is the sum of KiCad's design stackup (4 × 35 µm Cu, 0.11 / 0.40 / 0.11 mm FR4, 2 × 10 µm mask), not the ordered value. Order 0.8 mm. The fab's actual 0.8 mm 4-layer stackup is not documented here.
-- **Copper weight.** The KiCad stackup uses 35 µm on all layers. **TODO (Sparsh):** confirm the copper weight that was ordered.
+**Things to know about the files:**
+- **Order the enclosure set as 2-layer.** The KiCad project uses one 4-layer stackup for all seven boards, but the enclosure boards only need the outer layers, which are the ones published.
+- **Order 0.8 mm.** The main board's job file says 0.78 mm, which is just the sum of KiCad's design stackup.
+- **The drill files use a different origin from the Gerbers.** The Gerbers use the board's auxiliary origin, but the drill files use KiCad's absolute origin. In a Gerber viewer, the holes therefore appear offset from the copper:
+  - main board: 95.631 mm right and 87.249 mm down
+  - enclosure set: 34.671 mm right and 87.249 mm down
 
-## Fabrication notes
+  The hole sizes and spacing are correct. For the production run, the fab's CAM aligned the drill data to the copper. When you order, ask the fab to do the same, or shift the drill data by those amounts.
+- **Fab markings.** Tell the fab if you don't want its order number or date code on the boards.
 
-These are the instructions given to the fab, taken from the order correspondence (September 2024 for Gamma, March 2026 for Rev. 1). If you order the boards yourself, pass them on.
+**Instructions to pass on to the fab:**
+1. **Edge plating.** Plate the board edges wherever copper and solder mask reach the outline, on all seven boards.
+2. **Break-off tabs in the same place on every board.** Edge plating means the fab has to hold the boards with tabs. Ask for them at the **same position on all seven boards**, so the marks line up in the finished stack.
+3. **0.2 mm corner radius at the USB-C plug.** The main board needs 0.2 mm radius corners at P1, as marked on `USB_VSense_r1-User_Comments.gbr`. Send that file with the order.
+4. **Solder-mask bridges.** Some IC pads on the main board are closer together than a black-mask bridge allows. The fab may ask; one shared mask opening there is fine.
 
-1. **Edge plating on all seven boards.** Plate the edges wherever copper and solder mask extend to the board outline.
-2. **Tabs in the same place on every board.** Because of the continuous edge plating, the fab has to add break-off tabs (attachment points). Put them in the **same position on all seven boards**. In earlier orders the tabs were placed differently on different boards, and the break-off marks spoiled the look of the assembled stack.
-3. **0.2 mm corner radius on the main board.** The main board needs 0.2 mm radius corners at the USB-C plug (P1), as marked on the `User_Comments` layer. That layer (`USB_VSense_r1-User_Comments.gbr`) is included in `gerbers/main_pcba/`; send it with the order. This applies to the main board only.
-4. **Board spacing.** For the 2024 Gamma enclosure order the fab increased the spacing between the six designs to 1 mm, so that the boards would not join up after edge plating.
-5. **Solder-mask bridges.** With black mask, the fab's stated minimum IC pad spacing for a mask bridge is 0.22 mm (0.19 mm for other colours). Some IC pads on the main board are closer than that. For Rev. 1, as for Gamma, the bridge was dropped there and one opening used instead, after the assembly team confirmed it would not affect yield.
-6. **No X-outs needed** on the enclosure boards: they have no electrical function.
+## Assembling the main PCBA
 
-## PCBA notes (main board)
+The main board is assembled on both sides. Send the assembler the Gerbers, `BOM_USB_VSense_r1.csv` and `USB_VSense_r1-all.pos`.
+- The placement file's origin is the board's bottom-left corner, the same origin as the main-board Gerbers.
+- It lists the 35 fitted parts.
+- It was generated by KiCad for the Gamma build. The Rev. 1 placement is identical, and the R5 and R6 values in it have been set to match the BOM.
 
-These notes were given to the assembler, in addition to the BOM.
+Notes for the assembler:
+1. **P1 (USB-C plug) alignment is critical.** A misaligned plug makes the unit unusable.
+2. **Leave P1's pick-and-place cap on** through the whole assembly process to keep the contacts clean.
+3. **Solder P1's shield to the PCB tabs.**
+4. **D5 and D7 are oriented differently.** These are the two bi-colour LEDs, and their pin-outs differ: D5's polarity mark goes to the **C** (cathode) marking on the PCB, D7's to the **A** (anode) marking.
+5. **R11 is 0805.** All other resistors are 0603.
+6. **J2 is not fitted.** It is the programming connection.
 
-1. **P1 (USB-C plug) alignment needs special attention.** In the 32-unit 2024 batch, several plugs were soldered misaligned. That is not acceptable.
-2. **Keep P1's pick-and-place cap on.** The JAE DX07P024AJ5R1500 ships with a protective pick-and-place cap. Leave it on through the whole PCBA process to keep the contacts clean.
-3. **Solder P1's shield to the PCB tabs.** This was a defect in an earlier (beta) batch.
-4. **D5 and D7 polarity marks differ.** D5's polarity mark goes to the **cathode (C)** marking on the PCB. D7's polarity mark goes to the **anode (A)** marking. The two bi-colour LEDs have different pin-outs, so treat them separately.
-5. **R11 is 0805.** The other resistors are 0603. Don't accept a substitute for R11 in a different package (this came up in the Rev. 1 quotation).
-6. **H1–H4 are not on the main board.** They are in the same KiCad project but go on enclosure board 7/7 (four per board, labelled H1–H4 on its top silkscreen). They have no orientation and only need to be placed in their holes.
+**The enclosure set** needs only the four M1.6 SMT nuts (H1–H4) soldered to the top of board 7/7, facing up. Have them fitted when the boards are made, or solder them yourself, then remove the boards from their tabs.
 
-> **TODO (Sparsh):** add the pick-and-place (centroid) file for the main board. The 2024 Gamma order used `005_usb_volt_tester_gamma-all.pos`. One way to regenerate it from Rev. 1 (then delete the rows that aren't on the main board, such as H1–H4):
-> ```
-> kicad-cli pcb export pos --format csv --units mm --side both -o USB_VSense_r1-pos.csv hardware/KiCAD/USB_VSense_r1/USB_VSense_r1.kicad_pcb
-> ```
+## BOM
 
-## BOM notes
+`BOM_USB_VSense_r1.csv` lists each part with its manufacturer part number. The **Alternative** column lists parts that were used or offered in the production run. Each has the same value, tolerance and package, so either part may be fitted.
 
-- **Two sets of part numbers.** "Design" columns are what the schematic specifies. "Rev. 1 run" columns are the parts listed in the assembler's final quotation (March 2026), including the substitutes that were approved. A quotation is not a purchase confirmation.
-- **Unconfirmed resistors.** For R5, R9 and R14 the final quotation leaves the purchased part number blank, so those are marked **UNCONFIRMED**. Every listed option is a 1 % 0603 part of the same value.
-- **Mounting nuts.** H1–H4 (Würth 9774015633R) are soldered to enclosure board 7/7, not to the main PCBA.
-- **Programming pads.** J2 is a footprint only, never populated.
+The screws are generic M1.6 × 5 mm machine screws (black carbon steel, Phillips, ultra-thin flat wafer head). Don't use screws longer than 5 mm: the stack is 5.6 mm thick, and a longer screw sticks out of the base.
 
-## Firmware
+## Programming
 
-Program U1 over UPDI with `firmware/USB_VSense_fw_r1.hex`. The fuse settings are part of the HEX, so programming it also sets the fuses.
+Program the main board **before** it goes into the stack, because J2 is covered once the stack is assembled.
 
-SHA-256 (also in `firmware/USB_VSense_fw_r1.hex.sha256`):
+J2 is four plated holes on 2.54 mm pitch. They are staggered by ±0.254 mm, so a straight 0.1-inch header pushed in makes contact without soldering.
+
+| J2 hole | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Signal | not connected | VCC | GND | UPDI |
+
+Hole 1 is the one with the square pad.
+
+1. Connect a UPDI programmer (for example a PICkit 4 with MPLAB IPE) to VCC, GND and UPDI.
+2. Program `firmware/USB_VSense_fw_r1.hex` and verify it. The fuses are part of the HEX.
+
+Check the file first with its SHA-256 (also in `firmware/USB_VSense_fw_r1.hex.sha256`):
+
 ```
 dc750f71fc5567e7b25dc1818dd63438305cd66886e6211a805e0ac14986a6e1  USB_VSense_fw_r1.hex
 ```
 
-Provenance:
-- This HEX was built on 21 May 2026 for the Rev. 1 production run.
-- Rebuilding `firmware/MPLABX/usb_vsense_r1_2.X` with XC8 v3.10 and with XC8 v4.00 gives a byte-identical file.
-- Contents: 3,610 bytes of flash, fuses `00 00 7D 00 00 F6 FF 00 00`, lock byte `0xC5` (no lock).
+## Assembling the stack
 
-## Assembly
+USB VSense is a stack of seven 0.8 mm boards held together by four M1.6 × 5 mm screws, which go into the four nuts on the bottom board. Each board is marked 1/7 to 7/7 in silkscreen, top to bottom, with **T** next to the number on its top side and **B** on its bottom side.
 
-USB VSense is a stack of seven 0.8 mm PCBs, held together by four M1.6 screws threaded into four SMT nuts on the bottom board. The boards are marked 1/7 to 7/7 in silkscreen, top to bottom.
+| Board | Role |
+|---|---|
+| 1/7 | Faceplate with the voltage markings |
+| 2/7, 3/7 | Light guides, with eight LED windows each |
+| 4/7 | Main PCBA: LEDs and USB-C connectors on top, all other parts and J2 underneath |
+| 5/7, 6/7 | Spacers, with a cutout for the main board's bottom-side parts and holes for the nuts. 5/7 also takes the receptacle's rear pegs. |
+| 7/7 | Base, with the four nuts on top and the compliance marks underneath |
 
-| Board | Role | Features |
-|---|---|---|
-| 1/7 | Faceplate (top) | Voltage markings (05–48), four 1.8 mm screw holes |
-| 2/7 | Light guide | Eight 5.08 mm LED windows, 1.8 mm screw holes |
-| 3/7 | Light guide | Eight 5.08 mm LED windows, 1.8 mm screw holes |
-| 4/7 | **Main PCBA** | LEDs and USB-C plug/receptacle on top, all other parts and the UPDI pads (J2) on the bottom |
-| 5/7 | Spacer | 11.8 × 20.3 mm cutout for the main board's bottom-side parts, four 3.5 mm holes for the nuts, holes for the receptacle's rear pegs |
-| 6/7 | Spacer | 11.8 × 20.3 mm cutout, four 3.5 mm holes for the nuts |
-| 7/7 | Base (bottom) | Four M1.6 SMT nuts (H1–H4) facing up; CE, UKCA, WEEE and RoHS marks on the underside |
+1. **Test the main board on its own.** Remove P1's cap and connect a USB-C source. At power-up the LEDs sweep from 48 V down to 5 V. With a 5 V source, the 5 V LED then stays on.
+2. **Lay down the base.** Place 7/7 nuts up.
+3. **Add the spacers.** Stack 6/7, then 5/7, so the nuts pass through their holes.
+4. **Add the main PCBA (4/7)**, LEDs up. Its bottom-side parts sit in the spacer cutouts, and the receptacle's rear pegs go into 5/7.
+5. **Add the light guides and faceplate.** Stack 3/7, then 2/7, then the faceplate 1/7.
+6. **Line up the edges** so the tab marks match on all seven boards.
+7. **Screw the stack together.** Insert the four screws from the faceplate side and tighten until the stack is closed and firm. Don't overtighten: each board is only 0.8 mm thick.
+8. **Repeat the power-up check** from step 1 on the finished unit.
 
-How the stack fits:
-- **LEDs:** the main board's LEDs sit in the windows of boards 2/7 and 3/7.
-- **Bottom-side parts:** the parts on the main board's underside sit in the cutouts of boards 5/7 and 6/7.
-- **Nuts:** the 1.5 mm nuts on 7/7 sit in the 3.5 mm holes of 6/7 and 5/7, which together are 1.6 mm thick.
+## Compliance marks
 
-### You need
-
-- 1 × main PCBA (4/7), assembled
-- 6 × enclosure boards (1/7–3/7, 5/7–7/7), tabs removed, with the four nuts already soldered to 7/7
-- 4 × M1.6 screws (see the TODO below)
-- A UPDI programmer (e.g. PICkit 4 with MPLAB IPE) and a USB-C power source
-
-### Steps
-
-1. **Program the main board first.** The UPDI pads (J2) are on the underside of 4/7 and are covered once the stack is assembled. Program `firmware/USB_VSense_fw_r1.hex` and verify it.
-2. **Test the main board on its own.** Remove P1's pick-and-place cap if it is still fitted, then connect a USB-C source. At power-up the LEDs sweep from 48 V down to 5 V. With a plain 5 V source the 5 V LED then stays on.
-3. **Lay down the base.** Place 7/7 with the nuts facing up (compliance marks facing down).
-4. **Add the spacers.** Stack 6/7, then 5/7, over the nuts. The nuts pass through the 3.5 mm holes.
-5. **Add the main PCBA (4/7)** with its LEDs facing up. The receptacle's rear pegs go into the holes in 5/7, and the bottom-side parts sit in the cutouts.
-6. **Add the light guides and faceplate.** Stack 3/7, then 2/7, then the faceplate 1/7.
-7. **Align the edges** so the tab marks line up on all seven boards (fabrication note 2).
-8. **Screw the stack together.** Insert the four M1.6 screws from the faceplate side into the nuts. Tighten until the stack is closed and firm. Don't overtighten: the boards are only 0.8 mm thick.
-9. **Final test.** Repeat the power-up check from step 2 on the finished unit.
-
-> **TODO (Sparsh):**
-> - Screw specification: length, head type, material. It isn't in any quotation or order email.
-> - A tightening torque, if you have one.
-> - An exploded photo.
+Board 7/7 carries CE, UKCA, WEEE and RoHS marks. They refer to Meticulous Technologies' own declarations of conformity in `docs/`. If you build units yourself, those declarations don't cover them: remove the marks, or carry out your own conformity assessment. This matters most if you sell them. The names and logos are covered in [TRADEMARK.md](../../TRADEMARK.md).
