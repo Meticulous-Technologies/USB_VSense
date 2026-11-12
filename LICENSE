@@ -5,9 +5,9 @@ This repository contains "dual-licensed" material.
    directory are licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal.
    > Full text: ./hardware/LICENSE_HARDWARE.txt
 
-2. FIRMWARE/SOFTWARE (GPL v3)
+2. FIRMWARE/SOFTWARE (GPL-3.0-only)
    The source code and software located in the "firmware/" directory are 
-   licensed under the GNU General Public License v3.0.
+   licensed under the GNU General Public License, version 3 only (GPL-3.0-only).
    > Full text: ./firmware/LICENSE_FIRMWARE.txt
 
 3. DOCUMENTATION (CC BY-SA 4.0)

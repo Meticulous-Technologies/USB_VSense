@@ -70,7 +70,7 @@ hardware/KiCAD/USB_VSense_gamma/       Gamma: the OSHWA-certified release, kept 
     bom/ibom.html                      interactive BOM (Gamma)
 hardware/LICENSE_HARDWARE.txt          CERN-OHL-S-2.0
 firmware/MPLABX/usb_vsense_r1_2.X/            MPLAB X project, firmware v1.2 (main.c, gpio.c)
-firmware/LICENSE_FIRMWARE.txt          GPL v3
+firmware/LICENSE_FIRMWARE.txt          GPL-3.0-only
 docs/schematics/USB_VSense_gamma.pdf   schematic (applies to Gamma and Rev. 1)
 docs/*DECLARATION OF CONFORMITY*.pdf   EU / UK declarations of conformity
 docs/USB_VSENSE_SAFETY_GUIDE_EN_DE_FR_NL.pdf   safety guide
@@ -134,12 +134,10 @@ The fuse settings are defined in `main.h` (`FUSES = {...}`) and are embedded in 
 | Part | Licence |
 |---|---|
 | Hardware (`hardware/`) | [CERN-OHL-S-2.0](hardware/LICENSE_HARDWARE.txt) |
-| Firmware (`firmware/`) | GPL v3, see [LICENSE_FIRMWARE.txt](firmware/LICENSE_FIRMWARE.txt) |
+| Firmware (`firmware/`) | GPL-3.0-only, see [LICENSE_FIRMWARE.txt](firmware/LICENSE_FIRMWARE.txt) |
 | Documentation (`docs/`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
 See [NOTICE](NOTICE) for the source location and [TRADEMARK.md](TRADEMARK.md) for use of the names and logos.
-
-> **TODO (Sparsh):** the source headers say GPL-3.0-*or-later*, while the OSHWA listing says GPL-3.0-*only*. Pick one and make all three places match.
 
 ## Contact
 

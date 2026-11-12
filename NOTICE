@@ -15,7 +15,7 @@ As per CERN-OHL-S v2 section 4, should You produce hardware based on this
 source, You must display the Source Location visibly on the product, its
 packaging or its documentation.
 
-FIRMWARE (firmware/)  - GNU General Public License v3, see firmware/LICENSE_FIRMWARE.txt
+FIRMWARE (firmware/)  - GNU General Public License v3 only (GPL-3.0-only), see firmware/LICENSE_FIRMWARE.txt
 DOCUMENTATION (docs/) - CC BY-SA 4.0, see https://creativecommons.org/licenses/by-sa/4.0/
 
 OSHWA certification UID: NL000037 (https://certification.oshwa.org/nl000037.html)
