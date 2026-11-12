@@ -299,8 +299,14 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/3db434bd-4cac-418e-991f-794ec7a21fb1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -921,8 +927,16 @@
 		)
 		(property ki_fp_filters "USB*C*Plug*")
 		(path "/3c4c89c9-1fc2-48d8-8e26-3d7be27f106e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S1" "S2" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7"
+					"B7" "A6" "B6" "B10" "B11" "A3" "A2" "A10" "A11" "B3" "B2" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
@@ -1283,7 +1297,7 @@
 			(size 0.41 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A1")
 			(pintype "passive")
 			(uuid "9b7ad443-68d8-4e8a-a5c9-d5fa68bf8de5")
 		)
@@ -1292,7 +1306,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(P1-TX1+-PadA2)")
-			(pinfunction "TX1+")
+			(pinfunction "TX1+_A2")
 			(pintype "bidirectional+no_connect")
 			(uuid "2935ce94-4405-4889-936b-71bcce8eebf5")
 		)
@@ -1301,7 +1315,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(P1-TX1--PadA3)")
-			(pinfunction "TX1-")
+			(pinfunction "TX1-_A3")
 			(pintype "bidirectional+no_connect")
 			(uuid "65b60774-351c-4d37-b498-700623073c04")
 		)
@@ -1310,7 +1324,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A4")
 			(pintype "passive")
 			(uuid "a346068a-f770-4f61-83ad-427195ede77f")
 		)
@@ -1319,7 +1333,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/CC1")
-			(pinfunction "CC")
+			(pinfunction "CC_A5")
 			(pintype "bidirectional")
 			(uuid "6c601561-d692-4909-8e90-3358ee032f3e")
 		)
@@ -1328,7 +1342,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D+")
-			(pinfunction "D+")
+			(pinfunction "D+_A6")
 			(pintype "bidirectional")
 			(uuid "4d9335f1-7e1a-40f0-80cd-f7c676906495")
 		)
@@ -1337,7 +1351,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D-")
-			(pinfunction "D-")
+			(pinfunction "D-_A7")
 			(pintype "bidirectional")
 			(uuid "28a779d0-f56c-4421-8e76-9d0e662ae321")
 		)
@@ -1346,7 +1360,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/SBU1")
-			(pinfunction "SBU1")
+			(pinfunction "SBU1_A8")
 			(pintype "bidirectional")
 			(uuid "41046048-2347-45c0-b2e5-6ae975ea2988")
 		)
@@ -1355,7 +1369,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A9")
 			(pintype "passive")
 			(uuid "23edf00e-4827-43e9-980e-090a14703f52")
 		)
@@ -1364,7 +1378,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(P1-RX2--PadA10)")
-			(pinfunction "RX2-")
+			(pinfunction "RX2-_A10")
 			(pintype "bidirectional+no_connect")
 			(uuid "42f86b63-69f1-4d55-91b8-0ae97a6ae129")
 		)
@@ -1373,7 +1387,7 @@
 			(size 0.26 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(P1-RX2+-PadA11)")
-			(pinfunction "RX2+")
+			(pinfunction "RX2+_A11")
 			(pintype "bidirectional+no_connect")
 			(uuid "a7208e4b-019d-42e4-8dbf-e3dbe103f303")
 		)
@@ -1382,7 +1396,7 @@
 			(size 0.41 1.55)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A12")
 			(pintype "passive")
 			(uuid "35fbe3d9-739b-495b-9eb2-14fd7b47df39")
 		)
@@ -1391,7 +1405,7 @@
 			(size 0.41 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B1")
 			(pintype "passive")
 			(uuid "a91eb8ad-ebab-4b27-8255-c839cb50b5df")
 		)
@@ -1400,7 +1414,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(P1-TX2+-PadB2)")
-			(pinfunction "TX2+")
+			(pinfunction "TX2+_B2")
 			(pintype "bidirectional+no_connect")
 			(uuid "b2b7c426-c038-42ff-b337-64bc1246bdb2")
 		)
@@ -1409,7 +1423,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(P1-TX2--PadB3)")
-			(pinfunction "TX2-")
+			(pinfunction "TX2-_B3")
 			(pintype "bidirectional+no_connect")
 			(uuid "024fb24d-9c74-47d3-95fe-12ec08fdee75")
 		)
@@ -1418,7 +1432,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B4")
 			(pintype "passive")
 			(uuid "2fbb0375-d480-4329-94c5-3556083ace85")
 		)
@@ -1427,7 +1441,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/CC2")
-			(pinfunction "VCONN")
+			(pinfunction "VCONN_B5")
 			(pintype "bidirectional")
 			(uuid "429c3e57-dcd8-4dd2-aaa5-acf77c660a08")
 		)
@@ -1436,7 +1450,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/D+")
-			(pinfunction "D+")
+			(pinfunction "D+_B6")
 			(pintype "bidirectional")
 			(uuid "e76c865b-5a96-4a75-9184-030bd4ca0b0a")
 		)
@@ -1445,7 +1459,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/D-")
-			(pinfunction "D-")
+			(pinfunction "D-_B7")
 			(pintype "bidirectional")
 			(uuid "f57e0653-d3f6-44ce-a539-4d48fdbf030f")
 		)
@@ -1454,7 +1468,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SBU2")
-			(pinfunction "SBU2")
+			(pinfunction "SBU2_B8")
 			(pintype "bidirectional")
 			(uuid "f4bc8fea-1dfd-439b-88ec-a021626abc77")
 		)
@@ -1463,7 +1477,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B9")
 			(pintype "passive")
 			(uuid "20ee7a62-46d3-44e1-ada8-3330fc74fa6b")
 		)
@@ -1472,7 +1486,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(P1-RX1--PadB10)")
-			(pinfunction "RX1-")
+			(pinfunction "RX1-_B10")
 			(pintype "bidirectional+no_connect")
 			(uuid "0db1a36f-387d-4f54-96b7-149ca5878af5")
 		)
@@ -1481,7 +1495,7 @@
 			(size 0.26 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(P1-RX1+-PadB11)")
-			(pinfunction "RX1+")
+			(pinfunction "RX1+_B11")
 			(pintype "bidirectional+no_connect")
 			(uuid "ac6c191e-db6d-42d3-a999-1b5c8dab6229")
 		)
@@ -1490,7 +1504,7 @@
 			(size 0.41 1.55)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B12")
 			(pintype "passive")
 			(uuid "9c10e090-f826-463a-86bb-fbd347876df4")
 		)
@@ -1499,7 +1513,7 @@
 			(size 1.175 1.65)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "a988f895-9647-4f38-8589-a18ee4e1ba8d")
 		)
@@ -1508,7 +1522,7 @@
 			(size 0.36 2.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "90055aba-16a2-4180-8bbd-1729b7e16f9f")
 		)
@@ -1517,7 +1531,7 @@
 			(size 0.36 2.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "9a34b029-c0c6-4177-9242-9b9f71055d2b")
 		)
@@ -1526,7 +1540,7 @@
 			(size 0.775 1.62)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "34c4a53a-9c50-46d2-a040-bb963a1960d5")
 		)
@@ -1810,8 +1824,14 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/9016ec3a-7f95-40f2-8018-5c0e88d6c183")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -2292,8 +2312,14 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/e6c646ad-177e-44e5-b43f-32ac5de5ddc6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -3623,8 +3649,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/3441410e-18b4-4cef-9d84-d0af2686e005")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3764,7 +3796,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "e01cce3c-5d9f-4d8a-8a0c-120808ef77b6")
 		)
@@ -3774,7 +3806,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D8-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "5e81d991-f3fa-4be4-b7cf-da045704b7e2")
 		)
@@ -5180,8 +5212,16 @@
 		)
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/8fe7d688-4d9e-4ef3-8248-fef3485b510d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S1" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+					"A6" "B6" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5380,7 +5420,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A1")
 			(pintype "passive")
 			(uuid "1281a707-97ea-4143-bd0f-890ad93b7fae")
 		)
@@ -5389,7 +5429,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A4")
 			(pintype "passive")
 			(uuid "75dbce03-411e-467e-b500-667bf98684f7")
 		)
@@ -5398,7 +5438,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/CC1")
-			(pinfunction "CC1")
+			(pinfunction "CC1_A5")
 			(pintype "bidirectional")
 			(uuid "be785ac3-b320-4cd4-b206-38c41a64a4c2")
 		)
@@ -5407,7 +5447,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D+")
-			(pinfunction "D+")
+			(pinfunction "D+_A6")
 			(pintype "bidirectional")
 			(uuid "d01b3c73-00e4-4304-8d3c-b9459d9db156")
 		)
@@ -5416,7 +5456,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D-")
-			(pinfunction "D-")
+			(pinfunction "D-_A7")
 			(pintype "bidirectional")
 			(uuid "c3c65aa8-45c1-4498-ac97-c399f97972c1")
 		)
@@ -5425,7 +5465,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/SBU1")
-			(pinfunction "SBU1")
+			(pinfunction "SBU1_A8")
 			(pintype "bidirectional")
 			(uuid "2c84757c-83c5-4307-87d3-5e8dcbfee52b")
 		)
@@ -5434,7 +5474,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_A9")
 			(pintype "passive")
 			(uuid "2e6ce402-8915-4b15-b96a-063f88ee894c")
 		)
@@ -5443,7 +5483,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_A12")
 			(pintype "passive")
 			(uuid "1ca0b19d-2ea0-4a7c-a9c9-c621b2757fcf")
 		)
@@ -5452,7 +5492,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B1")
 			(pintype "passive")
 			(uuid "dab72e5c-15d0-4ddc-87fb-c0759b85c2d5")
 		)
@@ -5461,7 +5501,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B4")
 			(pintype "passive")
 			(uuid "7f69076b-aea7-4fd4-9c84-dd9328592d8e")
 		)
@@ -5470,7 +5510,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/CC2")
-			(pinfunction "CC2")
+			(pinfunction "CC2_B5")
 			(pintype "bidirectional")
 			(uuid "cdc34c3a-aca2-4b4a-9d13-6ed59a563a0d")
 		)
@@ -5479,7 +5519,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D+")
-			(pinfunction "D+")
+			(pinfunction "D+_B6")
 			(pintype "bidirectional")
 			(uuid "6571be8c-7f04-4e8a-a37d-636368139876")
 		)
@@ -5488,7 +5528,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/D-")
-			(pinfunction "D-")
+			(pinfunction "D-_B7")
 			(pintype "bidirectional")
 			(uuid "e3c223d8-2b00-409c-a5c0-0fbeb461ddb4")
 		)
@@ -5497,7 +5537,7 @@
 			(size 0.27 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/SBU2")
-			(pinfunction "SBU2")
+			(pinfunction "SBU2_B8")
 			(pintype "bidirectional")
 			(uuid "6e99649f-c6d6-4b8c-b654-660ed502c20d")
 		)
@@ -5506,7 +5546,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "VDD")
-			(pinfunction "VBUS")
+			(pinfunction "VBUS_B9")
 			(pintype "passive")
 			(uuid "23ef43fb-bcb2-4121-8e37-47bcd481e883")
 		)
@@ -5515,7 +5555,7 @@
 			(size 0.52 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_B12")
 			(pintype "passive")
 			(uuid "2933b2cb-c14f-48d7-a1da-3c6f111dd1af")
 		)
@@ -5526,7 +5566,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "f38cd761-d2e4-43db-bc86-a5d1f881b98f")
 		)
@@ -5537,7 +5577,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "ae6b7c1d-6d68-4600-8d63-208d3d21dd85")
 		)
@@ -5548,7 +5588,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "9f66b9b8-8e46-46f5-afc6-a24cbce5a043")
 		)
@@ -5559,7 +5599,7 @@
 			(layers "*.Cu" "*.Mask" "F.Paste")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SHIELD")
+			(pinfunction "SHIELD_S1")
 			(pintype "passive")
 			(uuid "09e092b8-2ed2-45f6-b9fc-1b428eb00ee7")
 		)
@@ -5684,8 +5724,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/0e5dbc29-c0c0-4f50-9c64-aa7963bfc321")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "2" "4" "1")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5834,7 +5880,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "K1")
+			(pinfunction "K1_1")
 			(pintype "input")
 			(uuid "889eed32-f594-4ca3-aa25-c1fb586bf60d")
 		)
@@ -5843,7 +5889,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(D7-A1)")
-			(pinfunction "A1")
+			(pinfunction "A1_2")
 			(pintype "input")
 			(uuid "b800856f-3110-4ab6-abd8-bd917abcbee5")
 		)
@@ -5852,7 +5898,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(D7-A2)")
-			(pinfunction "A2")
+			(pinfunction "A2_3")
 			(pintype "input")
 			(uuid "a4d9a1b4-dcf3-47ab-8b49-e612104b4336")
 		)
@@ -5861,7 +5907,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "K2")
+			(pinfunction "K2_4")
 			(pintype "input")
 			(uuid "0fc8d5a2-c217-4097-82a0-f172e7805a8c")
 		)
@@ -6290,8 +6336,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/27406f47-5d4c-4049-af3b-a3831d2f124f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6431,7 +6483,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "52341b5e-5df1-4205-93e2-4eb530f935c6")
 		)
@@ -6441,7 +6493,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D1-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "9556e41d-8634-4717-b16e-b4b1a6f75020")
 		)
@@ -6731,8 +6783,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/525236ec-05ff-49aa-b9e1-f9bd23dc797e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6872,7 +6930,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "7dea014a-fb70-49c7-9011-2a66c60d24fe")
 		)
@@ -6882,7 +6940,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D3-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "5fe8d2e7-6d03-4c1e-99df-3de668939bc2")
 		)
@@ -7444,8 +7502,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/8ee77745-a148-4782-a4bb-bc3fada9a56e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7585,7 +7649,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "19466577-dd99-4ea5-80e2-26c6fbd9121e")
 		)
@@ -7595,7 +7659,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D2-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "8c363623-58ad-4075-9fcd-3b15020cd98a")
 		)
@@ -7862,8 +7926,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/44d6c2fb-da18-4c21-a57e-bd85bff65025")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "4" "2" "3")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8012,7 +8082,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(D5-A1)")
-			(pinfunction "A1")
+			(pinfunction "A1_1")
 			(pintype "input")
 			(uuid "f1743680-d800-45a3-875b-e2e2b1767697")
 		)
@@ -8021,7 +8091,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "K1")
+			(pinfunction "K1_2")
 			(pintype "input")
 			(uuid "c2677945-ab7c-4b59-94c3-fc4a7a184d33")
 		)
@@ -8030,7 +8100,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
-			(pinfunction "K2")
+			(pinfunction "K2_3")
 			(pintype "input")
 			(uuid "ed2f92bf-2439-4c96-b293-4094316b93f1")
 		)
@@ -8039,7 +8109,7 @@
 			(size 1.2 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(D5-A2)")
-			(pinfunction "A2")
+			(pinfunction "A2_4")
 			(pintype "input")
 			(uuid "c17f5611-9a22-48fc-a6d1-a21cffebe50a")
 		)
@@ -8894,8 +8964,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/382b0809-e6d8-447f-b083-a475a7b8d643")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9035,7 +9111,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "f1794ed3-374a-4ee7-a635-b0a25c5f7d88")
 		)
@@ -9045,7 +9121,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D4-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "1e30ce57-8c71-4100-82ec-ab40c4617693")
 		)
@@ -9749,8 +9825,14 @@
 		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/f778a9fd-22d4-4901-bd97-ab3952b02126")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
@@ -11527,8 +11609,14 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f5a9eb92-0cad-4076-893e-b0e5974bd2e4")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11668,7 +11756,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "2eb98fd9-5c47-49cb-a545-b2b17e76485c")
 		)
@@ -11678,7 +11766,7 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "Net-(D6-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "d37d1144-31c5-49e1-9638-8b83de9d294a")
 		)
@@ -12225,9 +12313,15 @@
 		)
 		(property ki_fp_filters "PinHeader*1x06*P2.54mm* PinSocket*1x06*P2.54mm*")
 		(path "/6541e8cf-274c-4b5b-b038-ab6974694033")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
-		(attr through_hole exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1" "4" "5" "6")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.5748 -8.95)
@@ -12398,7 +12492,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J2-~{MCLR}{slash}VPP-Pad1)")
-			(pinfunction "~{MCLR}/VPP")
+			(pinfunction "~{MCLR}/VPP_1")
 			(pintype "passive+no_connect")
 			(uuid "ae8b5261-2ece-48a4-a2c4-a9ee14fb5f31")
 		)
@@ -12409,7 +12503,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VCC")
-			(pinfunction "VDD")
+			(pinfunction "VDD_2")
 			(pintype "passive")
 			(uuid "42f87e81-0547-42d8-885b-f44d89602ee4")
 		)
@@ -12420,7 +12514,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "VSS")
+			(pinfunction "VSS_3")
 			(pintype "power_in")
 			(uuid "81c2129b-dade-4132-98a7-85aae2cd749f")
 		)
@@ -12431,7 +12525,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/{slash}PGD{slash}ICSPDAT")
-			(pinfunction "PGD/ICSPDAT")
+			(pinfunction "PGD/ICSPDAT_4")
 			(pintype "bidirectional")
 			(uuid "a49fe088-786f-467e-b0e0-1bade268975c")
 		)
@@ -12562,8 +12656,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c5dc2f33-f752-4653-ad22-37df4a979367")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12727,7 +12827,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1.5k"
 			(at 0 -1.43 270)
 			(layer "B.Fab")
 			(uuid "edb4c90a-e2a1-44da-a941-0eca501087fe")
@@ -12837,7 +12937,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mfg Part #" "RC0603FR-071KL"
+		(property "Mfg Part #" "RC0603FR-071K5L"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -12853,8 +12953,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/3ad57c51-dc6d-4d4a-be5a-c796ef472176")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13144,8 +13250,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a540bc84-2f8e-41b1-ac8e-c2769557853f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13429,8 +13541,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/19dc6d81-a620-4353-b8c6-ca0c15a826ff")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13720,8 +13838,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/12bcead3-6be2-4d28-9efe-f8c580cc25b9")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14031,8 +14155,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3ce21eb0-312e-4845-aa5e-4181615ff29b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14342,8 +14472,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/37234e24-a249-470d-80c5-8b1bfce3191b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14627,8 +14763,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/e01b011b-e765-46da-a9f6-5d81eda1a38c")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14901,8 +15043,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/47a5da04-d000-4a85-bfa3-779ea3ea6122")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15192,8 +15340,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/59fa13cc-45fb-48ee-b0de-131b163167c0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15483,8 +15637,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a9a0a00a-1dd0-409f-90db-b5c4e4bc5d3d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15794,8 +15954,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/8f8787ac-b645-4728-93b3-c2f1baf22672")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16055,7 +16221,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mfg Part #" ""
+		(property "Mfg Part #" "CL10B104KO8NNNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -16113,8 +16279,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/e7fd69df-b9f0-4492-b25e-24acb241907b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16362,8 +16534,14 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/5d823f65-31b4-4092-8f81-f668b127dfee")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16724,8 +16902,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/ed7b5833-5632-4b0d-9795-ab6934258d24")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16987,8 +17171,14 @@
 		)
 		(property ki_fp_filters "SOT?23*")
 		(path "/0314be9f-8179-4565-9532-42d7f7806321")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17151,7 +17341,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_1")
 			(pintype "power_in")
 			(uuid "711bb41b-a5ac-471a-af7b-3e97df8cd7b5")
 		)
@@ -17161,7 +17351,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "VCC")
-			(pinfunction "VO")
+			(pinfunction "VO_2")
 			(pintype "power_out")
 			(uuid "c30fe649-7253-43e4-a5fc-f3366f8f39e8")
 		)
@@ -17171,7 +17361,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/VI")
-			(pinfunction "VI")
+			(pinfunction "VI_3")
 			(pintype "power_in")
 			(uuid "17ecb9c3-d98e-4e35-ae87-2d87a99d8c88")
 		)
@@ -17332,8 +17522,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/ccf1e051-ed60-45e4-aaa9-514fba6a75fa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17497,7 +17693,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "4.3k"
+		(property "Value" "3.6k"
 			(at 0 -1.43 270)
 			(layer "B.Fab")
 			(uuid "f2683b05-ffb0-404c-b9db-21021e4370b1")
@@ -17607,7 +17803,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Mfg Part #" "RC0603FR-074K3L"
+		(property "Mfg Part #" "RC0603FR-073K6L"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -17623,8 +17819,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/a423fd8b-7cb2-45f1-a474-45e3f61a9d31")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17908,8 +18110,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/cb099875-a79d-4660-b32e-c00789be65bc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18199,8 +18407,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/685f7975-1b5c-43bb-a31f-1f6e82a569cd")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18490,8 +18704,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/eff8df2e-649a-4d53-a0e4-8a157d3c1b33")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18749,8 +18969,16 @@
 		)
 		(property ki_fp_filters "VQFN*1EP*3x3mm*P0.4mm*")
 		(path "/3f438944-76ca-4718-b9ec-1ef75dafa51e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "15" "16" "17" "18" "4" "3" "21" "19" "20" "1" "2" "5" "6" "7"
+					"8" "14" "13" "12" "11" "10" "9"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18958,7 +19186,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/LED_09V")
-			(pinfunction "PA2")
+			(pinfunction "PA2_1")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -18982,7 +19210,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PA3-Pad2)")
-			(pinfunction "PA3")
+			(pinfunction "PA3_2")
 			(pintype "bidirectional+no_connect")
 			(uuid "0321466a-a85c-428c-b914-7729ac0a7aa7")
 		)
@@ -18992,7 +19220,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_3")
 			(pintype "power_in")
 			(uuid "800ff39f-7280-4f45-96ae-221ced894a66")
 		)
@@ -19002,7 +19230,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "VCC")
-			(pinfunction "VCC")
+			(pinfunction "VCC_4")
 			(pintype "power_in")
 			(uuid "443f7638-dcbc-49eb-ab54-5fd93bf24591")
 		)
@@ -19011,7 +19239,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/VDD_SENSE_LOW")
-			(pinfunction "PA4")
+			(pinfunction "PA4_5")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19034,7 +19262,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/VDD_SENSE_HIGH")
-			(pinfunction "PA5")
+			(pinfunction "PA5_6")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19058,7 +19286,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PA6-Pad7)")
-			(pinfunction "PA6")
+			(pinfunction "PA6_7")
 			(pintype "bidirectional+no_connect")
 			(uuid "1c073513-b986-451c-9f3c-4431fbc54fee")
 		)
@@ -19068,7 +19296,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/LED_05V")
-			(pinfunction "PA7")
+			(pinfunction "PA7_8")
 			(pintype "bidirectional")
 			(uuid "8292f550-35e3-4459-a9e6-da99d164f665")
 		)
@@ -19078,7 +19306,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PB5-Pad9)")
-			(pinfunction "PB5")
+			(pinfunction "PB5_9")
 			(pintype "bidirectional+no_connect")
 			(uuid "23f0a56f-ad27-4b7f-a991-491a53890f26")
 		)
@@ -19087,7 +19315,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/LED_12V")
-			(pinfunction "PB4")
+			(pinfunction "PB4_10")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19110,7 +19338,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/LED_20V")
-			(pinfunction "PB3")
+			(pinfunction "PB3_11")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19134,7 +19362,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/LED_36V")
-			(pinfunction "PB2")
+			(pinfunction "PB2_12")
 			(pintype "bidirectional")
 			(uuid "1dea514c-8b4e-4154-a786-154dbab8e5ba")
 		)
@@ -19144,7 +19372,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PB1-Pad13)")
-			(pinfunction "PB1")
+			(pinfunction "PB1_13")
 			(pintype "bidirectional+no_connect")
 			(uuid "a377bfd2-69c4-403f-b12e-711a9ca691ae")
 		)
@@ -19154,7 +19382,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/LED_48V")
-			(pinfunction "PB0")
+			(pinfunction "PB0_14")
 			(pintype "bidirectional")
 			(uuid "2cb1d4d3-d802-4c3d-bbf4-fdce4a738529")
 		)
@@ -19163,7 +19391,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/LED_28V")
-			(pinfunction "PC0")
+			(pinfunction "PC0_15")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19186,7 +19414,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/LED_15V")
-			(pinfunction "PC1")
+			(pinfunction "PC1_16")
 			(pintype "bidirectional")
 			(thermal_bridge_angle 90)
 			(options
@@ -19210,7 +19438,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PC2-Pad17)")
-			(pinfunction "PC2")
+			(pinfunction "PC2_17")
 			(pintype "bidirectional+no_connect")
 			(uuid "31e2011d-3faf-45fc-8ac9-a7fa48d31b62")
 		)
@@ -19220,7 +19448,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "unconnected-(U1-PC3-Pad18)")
-			(pinfunction "PC3")
+			(pinfunction "PC3_18")
 			(pintype "bidirectional+no_connect")
 			(uuid "c58c4ed0-ecd7-4c04-b32d-83950942cfbf")
 		)
@@ -19230,7 +19458,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/PGD{slash}ICSPDAT")
-			(pinfunction "~{RESET}/PA0")
+			(pinfunction "~{RESET}/PA0_19")
 			(pintype "bidirectional")
 			(uuid "9df4db33-4088-4e57-b7bb-ecc16a305fb8")
 		)
@@ -19239,7 +19467,7 @@
 			(size 0.143431 0.143431)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1-PA1-Pad20)")
-			(pinfunction "PA1")
+			(pinfunction "PA1_20")
 			(pintype "bidirectional+no_connect")
 			(thermal_bridge_angle 90)
 			(options
@@ -19262,7 +19490,7 @@
 			(size 1.7 1.7)
 			(layers "B.Cu" "B.Mask")
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_21")
 			(pintype "passive")
 			(uuid "a3285cd5-1703-4a98-b795-3fbd4e8f7060")
 		)
@@ -19992,8 +20220,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/cd724e66-e39f-4034-9580-9f931c4881f3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21019,8 +21253,14 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/34e1b2e1-7a55-419c-8667-fee303710ea2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21338,8 +21578,14 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3320e904-61ec-4d13-8131-b1764bdd04aa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "USB_VSense_gamma.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32477,8 +32723,8 @@
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30010)
+		(hatch none 0.1)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32493,85 +32739,52 @@
 		)
 		(polygon
 			(pts
-				(xy 107.5396 78.9596) (xy 107.0396 78.9596) (xy 106.873854 79.687392) (xy 107.2896 79.8606) (xy 107.705346 79.687392)
+				(xy 107.2074 46.141544) (xy 106.4574 46.141544) (xy 106.4574 46.5348) (xy 106.567235 46.799965)
+				(xy 106.830991 47.164343) (xy 107.191429 46.893829) (xy 107.461943 46.533391) (xy 107.097565 46.269635)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 107.538538 78.963027) (xy 107.541673 78.968702) (xy 107.703157 79.677783) (xy 107.701653 79.686611)
-				(xy 107.696249 79.691181) (xy 107.2941 79.858725) (xy 107.285145 79.858744) (xy 107.2851 79.858725)
-				(xy 106.88295 79.691181) (xy 106.876631 79.684836) (xy 106.876042 79.677783) (xy 107.037527 78.968702)
-				(xy 107.042705 78.961396) (xy 107.048935 78.9596) (xy 107.530265 78.9596)
+				(xy 107.2074 46.141544) (xy 106.4574 46.141544) (xy 106.4574 46.5348) (xy 106.567235 46.799965)
+				(xy 106.830991 47.164343) (xy 107.191429 46.893829) (xy 107.461943 46.533391) (xy 107.097565 46.269635)
+			)
+		)
+	)
+	(zone
+		(net "/D+")
+		(layer "F.Cu")
+		(hatch full 0.1)
+		(priority 30016)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 104.152 47.311) (xy 104.382 47.311) (xy 104.590358 46.744939) (xy 104.267 46.61) (xy 103.943642 46.744939)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 104.271478 46.611868) (xy 104.580011 46.740621) (xy 104.586326 46.74697) (xy 104.586485 46.75546)
+				(xy 104.384819 47.303341) (xy 104.378745 47.309922) (xy 104.373839 47.311) (xy 104.160161 47.311)
+				(xy 104.151888 47.307573) (xy 104.149181 47.303342) (xy 104.149181 47.303341) (xy 103.947514 46.755458)
+				(xy 103.947872 46.746513) (xy 103.953986 46.740621) (xy 104.262494 46.611879) (xy 104.271449 46.611857)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
-		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30004)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 106.4574 45.677286) (xy 107.2074 45.677286) (xy 107.13 44.8076) (xy 106.68 44.8066) (xy 106.264254 44.979808)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 107.119318 44.807576) (xy 107.127584 44.811021) (xy 107.130946 44.818239) (xy 107.206266 45.664549)
-				(xy 107.203586 45.673093) (xy 107.195649 45.67724) (xy 107.194612 45.677286) (xy 106.466301 45.677286)
-				(xy 106.458028 45.673859) (xy 106.455025 45.668708) (xy 106.267009 44.989758) (xy 106.268104 44.980871)
-				(xy 106.273782 44.975838) (xy 106.677828 44.807504) (xy 106.682351 44.806605)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30000)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 107.2074 44.9744) (xy 106.4574 44.9744) (xy 106.3824 45.8744) (xy 106.8324 45.8754) (xy 107.2824 45.8744)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 107.204907 44.977827) (xy 107.208294 44.985128) (xy 107.281346 45.861756) (xy 107.278618 45.870286)
-				(xy 107.270658 45.874388) (xy 107.269712 45.874428) (xy 106.832426 45.875399) (xy 106.832374 45.875399)
-				(xy 106.395087 45.874428) (xy 106.386822 45.870983) (xy 106.383413 45.862702) (xy 106.383452 45.861772)
-				(xy 106.456506 44.985128) (xy 106.460608 44.977168) (xy 106.468166 44.9744) (xy 107.196634 44.9744)
-			)
-		)
-	)
-	(zone
-		(net "Net-(D2-A)")
 		(layer "F.Cu")
 		(hatch none 0.1)
 		(priority 30007)
@@ -32589,23 +32802,21 @@
 		)
 		(polygon
 			(pts
-				(xy 108.245147 67.492569) (xy 108.386569 67.351147) (xy 108.146358 66.795061) (xy 107.820177 66.926177)
-				(xy 107.689061 67.252358)
+				(xy 107.0396 79.73975) (xy 107.5396 79.73975) (xy 107.73575 78.902337) (xy 107.2896 78.83875) (xy 106.84345 78.902337)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 108.245147 67.492569) (xy 108.386569 67.351147) (xy 108.146358 66.795061) (xy 107.820177 66.926177)
-				(xy 107.689061 67.252358)
+				(xy 107.0396 79.73975) (xy 107.5396 79.73975) (xy 107.73575 78.902337) (xy 107.2896 78.83875) (xy 106.84345 78.902337)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30013)
+		(hatch none 0.1)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32620,55 +32831,13 @@
 		)
 		(polygon
 			(pts
-				(xy 107.224494 81.844688) (xy 106.977007 81.597201) (xy 106.355392 81.983854) (xy 106.526893 82.400307)
-				(xy 106.943346 82.571808)
+				(xy 102.114 46.752259) (xy 102.864 46.752259) (xy 103.06215 45.933137) (xy 102.489 45.851259) (xy 102.16985 45.815663)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 106.983574 81.603768) (xy 107.219106 81.8393) (xy 107.222533 81.847573) (xy 107.221746 81.851792)
-				(xy 106.947658 82.560655) (xy 106.941478 82.567136) (xy 106.932526 82.567349) (xy 106.93229 82.567255)
-				(xy 106.5314 82.402163) (xy 106.525055 82.395844) (xy 106.359163 81.993011) (xy 106.359182 81.984057)
-				(xy 106.3638 81.978623) (xy 106.58463 81.841264) (xy 106.590809 81.8395) (xy 106.681687 81.8395)
-				(xy 106.681688 81.8395) (xy 106.751839 81.825546) (xy 106.831391 81.772391) (xy 106.884546 81.692839)
-				(xy 106.892211 81.6543) (xy 106.897185 81.646857) (xy 106.897431 81.646698) (xy 106.954899 81.610951)
-				(xy 106.969122 81.602106) (xy 106.977957 81.600646)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30014)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 106.14967 44.065138) (xy 105.937538 44.27727) (xy 106.264254 44.979808) (xy 106.680707 44.808307)
-				(xy 106.852208 44.391854)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 106.157088 44.068587) (xy 106.192175 44.084905) (xy 106.196966 44.08901) (xy 106.221609 44.125891)
-				(xy 106.301161 44.179046) (xy 106.371312 44.193) (xy 106.371313 44.193) (xy 106.422024 44.193) (xy 106.426957 44.19409)
-				(xy 106.842062 44.387136) (xy 106.848118 44.393731) (xy 106.847947 44.402199) (xy 106.682563 44.803799)
-				(xy 106.676244 44.810144) (xy 106.676199 44.810163) (xy 106.274599 44.975547) (xy 106.265644 44.975528)
-				(xy 106.259536 44.969663) (xy 105.940987 44.284688) (xy 105.940607 44.275743) (xy 105.943322 44.271485)
-				(xy 106.143884 44.070923) (xy 106.152156 44.067497)
+				(xy 102.114 46.752259) (xy 102.864 46.752259) (xy 103.06215 45.933137) (xy 102.489 45.851259) (xy 102.16985 45.815663)
 			)
 		)
 	)
@@ -32705,8 +32874,8 @@
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30009)
+		(hatch none 0.1)
+		(priority 30011)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32721,17 +32890,15 @@
 		)
 		(polygon
 			(pts
-				(xy 102.942824 45.265105) (xy 102.412495 44.734776) (xy 102.200254 45.702192) (xy 102.615293 45.875107)
-				(xy 103.031746 45.702192)
+				(xy 106.152392 44.06786) (xy 105.94026 44.279992) (xy 106.25408 44.673362) (xy 106.683429 44.811029)
+				(xy 106.545762 44.38168)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 102.427614 44.749895) (xy 102.940334 45.262615) (xy 102.943526 45.268556) (xy 103.029824 45.692748)
-				(xy 103.028115 45.701538) (xy 103.022846 45.705886) (xy 102.619786 45.873241) (xy 102.610831 45.873248)
-				(xy 102.209275 45.70595) (xy 102.202957 45.699606) (xy 102.202348 45.692646) (xy 102.407913 44.75566)
-				(xy 102.413033 44.748314) (xy 102.421848 44.74674)
+				(xy 106.152392 44.06786) (xy 105.94026 44.279992) (xy 106.25408 44.673362) (xy 106.683429 44.811029)
+				(xy 106.545762 44.38168)
 			)
 		)
 	)
@@ -32770,8 +32937,8 @@
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30001)
+		(hatch none 0.1)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32786,24 +32953,23 @@
 		)
 		(polygon
 			(pts
-				(xy 102.864 46.092) (xy 102.114 46.092) (xy 102.039 46.992) (xy 102.489 46.993) (xy 102.939 46.992)
+				(xy 106.733936 46.966665) (xy 107.264265 46.436336) (xy 107.097565 46.269635) (xy 107.2074 46.5348)
+				(xy 107.27855 45.933137) (xy 106.8324 45.86955) (xy 106.38625 45.933137) (xy 106.4574 46.5348) (xy 106.567235 46.799965)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 102.861507 46.095427) (xy 102.864894 46.102728) (xy 102.937946 46.979356) (xy 102.935218 46.987886)
-				(xy 102.927258 46.991988) (xy 102.926312 46.992028) (xy 102.489026 46.992999) (xy 102.488974 46.992999)
-				(xy 102.051687 46.992028) (xy 102.043422 46.988583) (xy 102.040013 46.980302) (xy 102.040052 46.979372)
-				(xy 102.113106 46.102728) (xy 102.117208 46.094768) (xy 102.124766 46.092) (xy 102.853234 46.092)
+				(xy 106.733936 46.966665) (xy 107.264265 46.436336) (xy 107.097565 46.269635) (xy 107.2074 46.5348)
+				(xy 107.27855 45.933137) (xy 106.8324 45.86955) (xy 106.38625 45.933137) (xy 106.4574 46.5348) (xy 106.567235 46.799965)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30012)
+		(hatch none 0.1)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32818,27 +32984,21 @@
 		)
 		(polygon
 			(pts
-				(xy 102.673 81.659745) (xy 102.173 81.659745) (xy 102.454254 82.571808) (xy 102.87 82.4006) (xy 103.188198 82.081402)
+				(xy 107.5396 78.96345) (xy 107.0396 78.96345) (xy 106.84345 79.800863) (xy 107.2896 79.86445) (xy 107.73575 79.800863)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 102.653542 81.663172) (xy 102.656744 81.669162) (xy 102.661454 81.692839) (xy 102.714609 81.772391)
-				(xy 102.794161 81.825546) (xy 102.864312 81.8395) (xy 102.864313 81.8395) (xy 102.888455 81.8395)
-				(xy 102.895865 81.842146) (xy 103.17821 82.073227) (xy 103.182442 82.081119) (xy 103.179854 82.089691)
-				(xy 103.179086 82.090541) (xy 102.871659 82.398935) (xy 102.867828 82.401494) (xy 102.46611 82.566925)
-				(xy 102.457155 82.566906) (xy 102.450836 82.560561) (xy 102.450475 82.559554) (xy 102.302939 82.081119)
-				(xy 102.177671 81.674892) (xy 102.178507 81.665977) (xy 102.185403 81.660265) (xy 102.188851 81.659745)
-				(xy 102.645269 81.659745)
+				(xy 107.5396 78.96345) (xy 107.0396 78.96345) (xy 106.84345 79.800863) (xy 107.2896 79.86445) (xy 107.73575 79.800863)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30006)
+		(hatch none 0.1)
+		(priority 30005)
 		(attr
 			(teardrop
 				(type padvia)
@@ -32853,17 +33013,15 @@
 		)
 		(polygon
 			(pts
-				(xy 106.736658 46.969387) (xy 107.266987 46.439058) (xy 107.2824 45.8744) (xy 106.831693 45.873693)
-				(xy 106.416654 46.046608)
+				(xy 106.4574 45.678653) (xy 107.2074 45.678653) (xy 107.12615 44.748863) (xy 106.8324 44.777653)
+				(xy 106.264254 44.979808)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 107.270394 45.874381) (xy 107.278662 45.877821) (xy 107.282076 45.886099) (xy 107.282072 45.8864)
-				(xy 107.267114 46.434399) (xy 107.263691 46.442353) (xy 106.749865 46.956179) (xy 106.741592 46.959606)
-				(xy 106.733319 46.956179) (xy 106.730538 46.951739) (xy 106.42026 46.057007) (xy 106.420787 46.048068)
-				(xy 106.426811 46.042375) (xy 106.829527 45.874595) (xy 106.834037 45.873696)
+				(xy 106.4574 45.678653) (xy 107.2074 45.678653) (xy 107.12615 44.748863) (xy 106.8324 44.777653)
+				(xy 106.264254 44.979808)
 			)
 		)
 	)
@@ -33421,103 +33579,6 @@
 		(net "/D+")
 		(layer "F.Cu")
 		(hatch full 0.1)
-		(priority 30016)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 104.152 47.311) (xy 104.382 47.311) (xy 104.590358 46.744939) (xy 104.267 46.61) (xy 103.943642 46.744939)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 104.271478 46.611868) (xy 104.580011 46.740621) (xy 104.586326 46.74697) (xy 104.586485 46.75546)
-				(xy 104.384819 47.303341) (xy 104.378745 47.309922) (xy 104.373839 47.311) (xy 104.160161 47.311)
-				(xy 104.151888 47.307573) (xy 104.149181 47.303342) (xy 104.149181 47.303341) (xy 103.947514 46.755458)
-				(xy 103.947872 46.746513) (xy 103.953986 46.740621) (xy 104.262494 46.611879) (xy 104.271449 46.611857)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30003)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 102.241 45.618694) (xy 102.991 45.618694) (xy 103.285746 44.979808) (xy 102.87 44.8066) (xy 102.454254 44.635392)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 102.46718 44.640715) (xy 102.87 44.8066) (xy 102.869996 44.806608) (xy 102.870041 44.806617)
-				(xy 103.274533 44.975136) (xy 103.280852 44.981481) (xy 103.280833 44.990436) (xy 103.280657 44.990837)
-				(xy 102.994137 45.611895) (xy 102.98756 45.617972) (xy 102.983513 45.618694) (xy 102.255509 45.618694)
-				(xy 102.247236 45.615267) (xy 102.243809 45.606994) (xy 102.244075 45.604514) (xy 102.451291 44.649054)
-				(xy 102.456393 44.641695) (xy 102.465205 44.6401)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30011)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 107.0396 79.7436) (xy 107.5396 79.7436) (xy 107.705346 79.015808) (xy 107.2896 78.8426) (xy 106.873854 79.015808)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 107.696249 79.012018) (xy 107.702568 79.018363) (xy 107.703157 79.025416) (xy 107.541673 79.734498)
-				(xy 107.536495 79.741804) (xy 107.530265 79.7436) (xy 107.048935 79.7436) (xy 107.040662 79.740173)
-				(xy 107.037527 79.734498) (xy 106.876042 79.025416) (xy 106.877546 79.016588) (xy 106.882949 79.012018)
-				(xy 107.285101 78.844473) (xy 107.294052 78.844455)
-			)
-		)
-	)
-	(zone
-		(net "/D+")
-		(layer "F.Cu")
-		(hatch full 0.1)
 		(priority 30018)
 		(attr
 			(teardrop
@@ -33549,8 +33610,8 @@
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30005)
+		(hatch none 0.1)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33565,24 +33626,21 @@
 		)
 		(polygon
 			(pts
-				(xy 107.2074 46.137694) (xy 106.4574 46.137694) (xy 106.772254 47.062608) (xy 107.188 46.8914) (xy 107.506198 46.572202)
+				(xy 102.864 46.09585) (xy 102.114 46.09585) (xy 102.04285 46.933263) (xy 102.489 46.99685) (xy 102.93515 46.933263)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 107.209519 46.141121) (xy 107.210884 46.14276) (xy 107.500692 46.564195) (xy 107.502556 46.572953)
-				(xy 107.499337 46.579084) (xy 107.189659 46.889735) (xy 107.185828 46.892294) (xy 106.78377 47.057865)
-				(xy 106.774815 47.057846) (xy 106.768496 47.051501) (xy 106.768247 47.050839) (xy 106.462666 46.153163)
-				(xy 106.463244 46.144228) (xy 106.469972 46.138318) (xy 106.473742 46.137694) (xy 107.201246 46.137694)
+				(xy 102.864 46.09585) (xy 102.114 46.09585) (xy 102.04285 46.933263) (xy 102.489 46.99685) (xy 102.93515 46.933263)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
-		(priority 30015)
+		(hatch none 0.1)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -33597,27 +33655,22 @@
 		)
 		(polygon
 			(pts
-				(xy 103.612462 44.27727) (xy 103.40033 44.065138) (xy 102.697792 44.391854) (xy 102.869293 44.808307)
-				(xy 103.285746 44.979808)
+				(xy 103.60974 44.279992) (xy 103.397608 44.06786) (xy 103.004237 44.38168) (xy 102.866571 44.811029)
+				(xy 103.295919 44.673362)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 103.406116 44.070924) (xy 103.606675 44.271483) (xy 103.610102 44.279756) (xy 103.609011 44.28469)
-				(xy 103.421445 44.68801) (xy 103.419109 44.691349) (xy 103.387534 44.722924) (xy 103.342703 44.800574)
-				(xy 103.3195 44.887169) (xy 103.3195 44.904638) (xy 103.318409 44.909572) (xy 103.290464 44.969662)
-				(xy 103.283868 44.975718) (xy 103.2754 44.975547) (xy 102.8738 44.810163) (xy 102.867455 44.803844)
-				(xy 102.702052 44.402198) (xy 102.702071 44.393244) (xy 102.707935 44.387136) (xy 103.123042 44.19409)
-				(xy 103.127976 44.193) (xy 103.178687 44.193) (xy 103.178688 44.193) (xy 103.248839 44.179046) (xy 103.328391 44.125891)
-				(xy 103.353035 44.089008) (xy 103.357822 44.084906) (xy 103.392911 44.068587) (xy 103.401856 44.068207)
+				(xy 103.60974 44.279992) (xy 103.397608 44.06786) (xy 103.004237 44.38168) (xy 102.866571 44.811029)
+				(xy 103.295919 44.673362)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "F.Cu")
-		(hatch full 0.1)
+		(hatch none 0.1)
 		(priority 30002)
 		(attr
 			(teardrop
@@ -33633,16 +33686,75 @@
 		)
 		(polygon
 			(pts
-				(xy 102.114 46.749138) (xy 102.864 46.749138) (xy 103.031746 46.046608) (xy 102.616 45.8734) (xy 102.166 45.8744)
+				(xy 107.2074 44.97825) (xy 106.4574 44.97825) (xy 106.38625 45.815663) (xy 106.8324 45.87925) (xy 107.27855 45.815663)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 102.618172 45.874305) (xy 103.022552 46.042778) (xy 103.028871 46.049123) (xy 103.029432 46.056295)
-				(xy 102.866145 46.740155) (xy 102.860891 46.747406) (xy 102.854765 46.749138) (xy 102.126416 46.749138)
-				(xy 102.118143 46.745711) (xy 102.114716 46.737438) (xy 102.114737 46.736744) (xy 102.155763 46.046608)
-				(xy 102.165347 45.88538) (xy 102.169258 45.877325) (xy 102.176998 45.874375) (xy 102.613647 45.873405)
+				(xy 107.2074 44.97825) (xy 106.4574 44.97825) (xy 106.38625 45.815663) (xy 106.8324 45.87925) (xy 107.27855 45.815663)
+			)
+		)
+	)
+	(zone
+		(net "Net-(D2-A)")
+		(layer "F.Cu")
+		(hatch none 0.1)
+		(priority 30009)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 108.245147 67.492569) (xy 108.386569 67.351147) (xy 108.146358 66.795061) (xy 107.820177 66.926177)
+				(xy 107.689061 67.252358)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 108.245147 67.492569) (xy 108.386569 67.351147) (xy 108.146358 66.795061) (xy 107.820177 66.926177)
+				(xy 107.689061 67.252358)
+			)
+		)
+	)
+	(zone
+		(net "VDD")
+		(layer "F.Cu")
+		(hatch none 0.1)
+		(priority 30003)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 102.940102 45.267827) (xy 102.409773 44.737498) (xy 102.350835 44.796435) (xy 102.241 45.0616)
+				(xy 102.16985 45.815663) (xy 102.616 45.87925) (xy 103.06215 45.815663) (xy 102.991 45.0616) (xy 102.881165 45.326765)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 102.940102 45.267827) (xy 102.409773 44.737498) (xy 102.350835 44.796435) (xy 102.241 45.0616)
+				(xy 102.16985 45.815663) (xy 102.616 45.87925) (xy 103.06215 45.815663) (xy 102.991 45.0616) (xy 102.881165 45.326765)
 			)
 		)
 	)
@@ -36545,37 +36657,6 @@
 		)
 	)
 	(zone
-		(net "Net-(D2-A)")
-		(layer "B.Cu")
-		(hatch none 0.1)
-		(priority 30016)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 108.323468 67.37989) (xy 108.46489 67.238468) (xy 108.070487 66.681513) (xy 107.898498 66.813498)
-				(xy 108.007467 67.226442)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 108.323468 67.37989) (xy 108.46489 67.238468) (xy 108.070487 66.681513) (xy 107.898498 66.813498)
-				(xy 108.007467 67.226442)
-			)
-		)
-	)
-	(zone
 		(net "VCC")
 		(layer "B.Cu")
 		(uuid "0bea4a8f-2ce5-484b-8add-1de1801cfa68")
@@ -36604,6 +36685,35 @@
 				(xy 105.026166 68.351004) (xy 105.029 68.377362) (xy 105.029 69.726) (xy 105.009315 69.793039) (xy 104.956511 69.838794)
 				(xy 104.905 69.85) (xy 101.47 69.85) (xy 101.402961 69.830315) (xy 101.357206 69.777511) (xy 101.346 69.726)
 				(xy 101.346 66.672) (xy 101.365685 66.604961) (xy 101.418489 66.559206) (xy 101.47 66.548) (xy 102.619 66.548)
+			)
+		)
+	)
+	(zone
+		(net "VDD")
+		(layer "B.Cu")
+		(hatch none 0.1)
+		(priority 30007)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 102.485 78.98885) (xy 101.985 78.98885) (xy 101.78885 79.826263) (xy 102.235 79.88985) (xy 102.68115 79.826263)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 102.485 78.98885) (xy 101.985 78.98885) (xy 101.78885 79.826263) (xy 102.235 79.88985) (xy 102.68115 79.826263)
 			)
 		)
 	)
@@ -37432,40 +37542,7 @@
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30006)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 106.736351 46.969081) (xy 107.266681 46.438751) (xy 107.2824 45.8744) (xy 106.831693 45.873693)
-				(xy 106.416654 46.046608)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 107.270388 45.874381) (xy 107.278656 45.877821) (xy 107.28207 45.886099) (xy 107.282065 45.886407)
-				(xy 107.26681 46.434096) (xy 107.263388 46.442043) (xy 106.749561 46.95587) (xy 106.741288 46.959297)
-				(xy 106.733015 46.95587) (xy 106.730233 46.951428) (xy 106.552557 46.438751) (xy 106.420257 46.057004)
-				(xy 106.420786 46.048067) (xy 106.42681 46.042376) (xy 106.829527 45.874595) (xy 106.834037 45.873696)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
-		(hatch full 0.1)
+		(hatch none 0.1)
 		(priority 30001)
 		(attr
 			(teardrop
@@ -37481,26 +37558,21 @@
 		)
 		(polygon
 			(pts
-				(xy 107.206693 44.974541) (xy 106.456693 44.974541) (xy 106.3824 45.8744) (xy 106.8324 45.8754)
-				(xy 107.2824 45.8744)
+				(xy 102.864 46.09585) (xy 102.114 46.09585) (xy 102.04285 46.933263) (xy 102.489 46.99685) (xy 102.93515 46.933263)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 107.204209 44.977968) (xy 107.207594 44.985259) (xy 107.228471 45.233404) (xy 107.281335 45.861747)
-				(xy 107.278614 45.870278) (xy 107.270657 45.874387) (xy 107.269702 45.874428) (xy 106.832426 45.875399)
-				(xy 106.832374 45.875399) (xy 106.395077 45.874428) (xy 106.386812 45.870983) (xy 106.383403 45.862702)
-				(xy 106.383443 45.861765) (xy 106.383445 45.861747) (xy 106.455807 44.985278) (xy 106.459903 44.977315)
-				(xy 106.467467 44.974541) (xy 107.195936 44.974541)
+				(xy 102.864 46.09585) (xy 102.114 46.09585) (xy 102.04285 46.933263) (xy 102.489 46.99685) (xy 102.93515 46.933263)
 			)
 		)
 	)
 	(zone
-		(net "/D-")
+		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30014)
+		(hatch none 0.1)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37515,17 +37587,15 @@
 		)
 		(polygon
 			(pts
-				(xy 104.720553 44.996919) (xy 104.557919 45.159553) (xy 104.451642 45.588061) (xy 104.775707 45.722707)
-				(xy 105.098358 45.588061)
+				(xy 107.206693 46.141837) (xy 106.456693 46.141837) (xy 106.456693 46.534093) (xy 106.566528 46.799258)
+				(xy 106.830991 47.164343) (xy 107.191429 46.893829) (xy 107.461943 46.533391) (xy 107.096858 46.268928)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 104.726805 45.007212) (xy 104.728391 45.009184) (xy 105.090857 45.576325) (xy 105.092424 45.585142)
-				(xy 105.087299 45.592485) (xy 105.085504 45.593424) (xy 104.780203 45.72083) (xy 104.771248 45.720853)
-				(xy 104.771208 45.720837) (xy 104.46093 45.59192) (xy 104.454605 45.585581) (xy 104.454063 45.578299)
-				(xy 104.557136 45.162709) (xy 104.560217 45.157254) (xy 104.71026 45.007211) (xy 104.718532 45.003785)
+				(xy 107.206693 46.141837) (xy 106.456693 46.141837) (xy 106.456693 46.534093) (xy 106.566528 46.799258)
+				(xy 106.830991 47.164343) (xy 107.191429 46.893829) (xy 107.461943 46.533391) (xy 107.096858 46.268928)
 			)
 		)
 	)
@@ -37562,168 +37632,6 @@
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30005)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 107.206693 46.137987) (xy 106.456693 46.137987) (xy 106.772254 47.062608) (xy 107.188 46.8914)
-				(xy 107.506198 46.572202)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 107.208823 46.141414) (xy 107.210181 46.143044) (xy 107.500672 46.564191) (xy 107.502549 46.572947)
-				(xy 107.499327 46.579094) (xy 107.189659 46.889735) (xy 107.185828 46.892294) (xy 106.783761 47.057868)
-				(xy 106.774806 47.057849) (xy 106.768487 47.051504) (xy 106.768239 47.050846) (xy 106.461976 46.153466)
-				(xy 106.462547 46.144529) (xy 106.46927 46.138614) (xy 106.473049 46.137987) (xy 107.20055 46.137987)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
-		(hatch none 0.1)
-		(priority 30008)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 102.485 78.98885) (xy 101.985 78.98885) (xy 101.78885 79.826263) (xy 102.235 79.88985) (xy 102.68115 79.826263)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 102.485 78.98885) (xy 101.985 78.98885) (xy 101.78885 79.826263) (xy 102.235 79.88985) (xy 102.68115 79.826263)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30004)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 106.456693 45.677427) (xy 107.206693 45.677427) (xy 107.13 44.8076) (xy 106.68 44.8066) (xy 106.264254 44.979808)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 107.119309 44.807576) (xy 107.127575 44.811021) (xy 107.130938 44.818248) (xy 107.205571 45.664699)
-				(xy 107.202884 45.673242) (xy 107.194944 45.677382) (xy 107.193916 45.677427) (xy 106.465603 45.677427)
-				(xy 106.45733 45.674) (xy 106.454324 45.668838) (xy 106.266997 44.989751) (xy 106.268101 44.980865)
-				(xy 106.273773 44.975841) (xy 106.677828 44.807504) (xy 106.682351 44.806605)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30009)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 103.612462 44.27727) (xy 103.40033 44.065138) (xy 102.697792 44.391854) (xy 102.869293 44.808307)
-				(xy 103.285746 44.979808)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 103.406116 44.070924) (xy 103.606675 44.271483) (xy 103.610102 44.279756) (xy 103.609011 44.28469)
-				(xy 103.290464 44.969662) (xy 103.283868 44.975718) (xy 103.2754 44.975547) (xy 102.8738 44.810163)
-				(xy 102.867455 44.803844) (xy 102.702052 44.402198) (xy 102.702071 44.393244) (xy 102.707935 44.387136)
-				(xy 103.123042 44.19409) (xy 103.127976 44.193) (xy 103.178687 44.193) (xy 103.178688 44.193) (xy 103.248839 44.179046)
-				(xy 103.328391 44.125891) (xy 103.353035 44.089008) (xy 103.357822 44.084906) (xy 103.392911 44.068587)
-				(xy 103.401856 44.068207)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30003)
-		(attr
-			(teardrop
-				(type padvia)
-			)
-		)
-		(connect_pads yes
-			(clearance 0)
-		)
-		(min_thickness 0.0254)
-		(fill yes
-			(island_removal_mode 1)
-		)
-		(polygon
-			(pts
-				(xy 102.241 45.618694) (xy 102.991 45.618694) (xy 103.285746 44.979808) (xy 102.87 44.8066) (xy 102.454254 44.635392)
-			)
-		)
-		(filled_polygon
-			(layer "B.Cu")
-			(pts
-				(xy 102.46718 44.640715) (xy 102.87 44.8066) (xy 102.869996 44.806608) (xy 102.870041 44.806617)
-				(xy 103.274533 44.975136) (xy 103.280852 44.981481) (xy 103.280833 44.990436) (xy 103.280657 44.990837)
-				(xy 102.994137 45.611895) (xy 102.98756 45.617972) (xy 102.983513 45.618694) (xy 102.255509 45.618694)
-				(xy 102.247236 45.615267) (xy 102.243809 45.606994) (xy 102.244075 45.604514) (xy 102.451291 44.649054)
-				(xy 102.456393 44.641695) (xy 102.465205 44.6401)
-			)
-		)
-	)
-	(zone
-		(net "VDD")
-		(layer "B.Cu")
 		(hatch none 0.1)
 		(priority 30012)
 		(attr
@@ -37740,21 +37648,23 @@
 		)
 		(polygon
 			(pts
-				(xy 101.985 79.63615) (xy 102.485 79.63615) (xy 102.68115 78.798737) (xy 102.235 78.73515) (xy 101.78885 78.798737)
+				(xy 106.152392 44.06786) (xy 105.94026 44.279992) (xy 106.25408 44.673362) (xy 106.683429 44.811029)
+				(xy 106.545762 44.38168)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 101.985 79.63615) (xy 102.485 79.63615) (xy 102.68115 78.798737) (xy 102.235 78.73515) (xy 101.78885 78.798737)
+				(xy 106.152392 44.06786) (xy 105.94026 44.279992) (xy 106.25408 44.673362) (xy 106.683429 44.811029)
+				(xy 106.545762 44.38168)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30010)
+		(hatch none 0.1)
+		(priority 30011)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37769,27 +37679,23 @@
 		)
 		(polygon
 			(pts
-				(xy 106.14967 44.065138) (xy 105.937538 44.27727) (xy 106.264254 44.979808) (xy 106.680707 44.808307)
-				(xy 106.852208 44.391854)
+				(xy 103.60974 44.279992) (xy 103.397608 44.06786) (xy 103.004237 44.38168) (xy 102.866571 44.811029)
+				(xy 103.295919 44.673362)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 106.157088 44.068587) (xy 106.192175 44.084905) (xy 106.196966 44.08901) (xy 106.221609 44.125891)
-				(xy 106.301161 44.179046) (xy 106.371312 44.193) (xy 106.371313 44.193) (xy 106.422024 44.193) (xy 106.426957 44.19409)
-				(xy 106.842062 44.387136) (xy 106.848118 44.393731) (xy 106.847947 44.402199) (xy 106.682563 44.803799)
-				(xy 106.676244 44.810144) (xy 106.676199 44.810163) (xy 106.274599 44.975547) (xy 106.265644 44.975528)
-				(xy 106.259536 44.969663) (xy 105.940987 44.284688) (xy 105.940607 44.275743) (xy 105.943322 44.271485)
-				(xy 106.143884 44.070923) (xy 106.152156 44.067497)
+				(xy 103.60974 44.279992) (xy 103.397608 44.06786) (xy 103.004237 44.38168) (xy 102.866571 44.811029)
+				(xy 103.295919 44.673362)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30007)
+		(hatch none 0.1)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37804,25 +37710,25 @@
 		)
 		(polygon
 			(pts
-				(xy 102.942824 45.265105) (xy 102.412495 44.734776) (xy 102.200254 45.702192) (xy 102.615293 45.875107)
-				(xy 103.031746 45.702192)
+				(xy 106.733729 46.966458) (xy 107.264058 46.436129) (xy 107.096858 46.268928) (xy 107.206693 46.534093)
+				(xy 107.27855 45.933137) (xy 106.831693 45.86955) (xy 106.38625 45.933137) (xy 106.456693 46.534093)
+				(xy 106.566528 46.799258)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 102.427614 44.749895) (xy 102.940334 45.262615) (xy 102.943526 45.268556) (xy 103.029824 45.692748)
-				(xy 103.028115 45.701538) (xy 103.022846 45.705886) (xy 102.619786 45.873241) (xy 102.610831 45.873248)
-				(xy 102.209275 45.70595) (xy 102.202957 45.699606) (xy 102.202348 45.692646) (xy 102.407913 44.75566)
-				(xy 102.413033 44.748314) (xy 102.421848 44.74674)
+				(xy 106.733729 46.966458) (xy 107.264058 46.436129) (xy 107.096858 46.268928) (xy 107.206693 46.534093)
+				(xy 107.27855 45.933137) (xy 106.831693 45.86955) (xy 106.38625 45.933137) (xy 106.456693 46.534093)
+				(xy 106.566528 46.799258)
 			)
 		)
 	)
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
-		(priority 30002)
+		(hatch none 0.1)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37837,16 +37743,79 @@
 		)
 		(polygon
 			(pts
-				(xy 102.114 46.749138) (xy 102.864 46.749138) (xy 103.031746 46.046608) (xy 102.616 45.8734) (xy 102.166 45.8744)
+				(xy 102.940102 45.267827) (xy 102.409773 44.737498) (xy 102.350835 44.796435) (xy 102.241 45.0616)
+				(xy 102.16985 45.815663) (xy 102.616 45.87925) (xy 103.06215 45.815663) (xy 102.991 45.0616) (xy 102.881165 45.326765)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 102.618172 45.874305) (xy 103.022552 46.042778) (xy 103.028871 46.049123) (xy 103.029432 46.056295)
-				(xy 102.866145 46.740155) (xy 102.860891 46.747406) (xy 102.854765 46.749138) (xy 102.126416 46.749138)
-				(xy 102.118143 46.745711) (xy 102.114716 46.737438) (xy 102.114737 46.736744) (xy 102.155763 46.046608)
-				(xy 102.165347 45.88538) (xy 102.169258 45.877325) (xy 102.176998 45.874375) (xy 102.613647 45.873405)
+				(xy 102.940102 45.267827) (xy 102.409773 44.737498) (xy 102.350835 44.796435) (xy 102.241 45.0616)
+				(xy 102.16985 45.815663) (xy 102.616 45.87925) (xy 103.06215 45.815663) (xy 102.991 45.0616) (xy 102.881165 45.326765)
+			)
+		)
+	)
+	(zone
+		(net "Net-(D2-A)")
+		(layer "B.Cu")
+		(hatch none 0.1)
+		(priority 30015)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 108.323468 67.37989) (xy 108.46489 67.238468) (xy 108.070487 66.681513) (xy 107.898498 66.813498)
+				(xy 108.007467 67.226442)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 108.323468 67.37989) (xy 108.46489 67.238468) (xy 108.070487 66.681513) (xy 107.898498 66.813498)
+				(xy 108.007467 67.226442)
+			)
+		)
+	)
+	(zone
+		(net "/D-")
+		(layer "B.Cu")
+		(hatch full 0.1)
+		(priority 30014)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 104.720553 44.996919) (xy 104.557919 45.159553) (xy 104.451642 45.588061) (xy 104.775707 45.722707)
+				(xy 105.098358 45.588061)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 104.726805 45.007212) (xy 104.728391 45.009184) (xy 105.090857 45.576325) (xy 105.092424 45.585142)
+				(xy 105.087299 45.592485) (xy 105.085504 45.593424) (xy 104.780203 45.72083) (xy 104.771248 45.720853)
+				(xy 104.771208 45.720837) (xy 104.46093 45.59192) (xy 104.454605 45.585581) (xy 104.454063 45.578299)
+				(xy 104.557136 45.162709) (xy 104.560217 45.157254) (xy 104.71026 45.007211) (xy 104.718532 45.003785)
 			)
 		)
 	)
@@ -37887,7 +37856,7 @@
 		(net "VDD")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30011)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -37915,7 +37884,36 @@
 	(zone
 		(net "VDD")
 		(layer "B.Cu")
-		(hatch full 0.1)
+		(hatch none 0.1)
+		(priority 30009)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 101.985 79.63615) (xy 102.485 79.63615) (xy 102.68115 78.798737) (xy 102.235 78.73515) (xy 101.78885 78.798737)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 101.985 79.63615) (xy 102.485 79.63615) (xy 102.68115 78.798737) (xy 102.235 78.73515) (xy 101.78885 78.798737)
+			)
+		)
+	)
+	(zone
+		(net "VDD")
+		(layer "B.Cu")
+		(hatch none 0.1)
 		(priority 30000)
 		(attr
 			(teardrop
@@ -37931,16 +37929,75 @@
 		)
 		(polygon
 			(pts
-				(xy 102.864 46.092) (xy 102.114 46.092) (xy 102.039 46.992) (xy 102.489 46.993) (xy 102.939 46.992)
+				(xy 102.114 46.752259) (xy 102.864 46.752259) (xy 103.06215 45.933137) (xy 102.489 45.851259) (xy 102.16985 45.815663)
 			)
 		)
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 102.861507 46.095427) (xy 102.864894 46.102728) (xy 102.937946 46.979356) (xy 102.935218 46.987886)
-				(xy 102.927258 46.991988) (xy 102.926312 46.992028) (xy 102.489026 46.992999) (xy 102.488974 46.992999)
-				(xy 102.051687 46.992028) (xy 102.043422 46.988583) (xy 102.040013 46.980302) (xy 102.040052 46.979372)
-				(xy 102.113106 46.102728) (xy 102.117208 46.094768) (xy 102.124766 46.092) (xy 102.853234 46.092)
+				(xy 102.114 46.752259) (xy 102.864 46.752259) (xy 103.06215 45.933137) (xy 102.489 45.851259) (xy 102.16985 45.815663)
+			)
+		)
+	)
+	(zone
+		(net "VDD")
+		(layer "B.Cu")
+		(hatch none 0.1)
+		(priority 30002)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 107.206693 44.97825) (xy 106.456693 44.97825) (xy 106.38625 45.815663) (xy 106.831693 45.87925)
+				(xy 107.27855 45.815663)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 107.206693 44.97825) (xy 106.456693 44.97825) (xy 106.38625 45.815663) (xy 106.831693 45.87925)
+				(xy 107.27855 45.815663)
+			)
+		)
+	)
+	(zone
+		(net "VDD")
+		(layer "B.Cu")
+		(hatch none 0.1)
+		(priority 30005)
+		(attr
+			(teardrop
+				(type padvia)
+			)
+		)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.0254)
+		(fill yes
+			(island_removal_mode 1)
+		)
+		(polygon
+			(pts
+				(xy 106.456693 45.678843) (xy 107.206693 45.678843) (xy 107.12615 44.748863) (xy 106.831693 44.777843)
+				(xy 106.264254 44.979808)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 106.456693 45.678843) (xy 107.206693 45.678843) (xy 107.12615 44.748863) (xy 106.831693 44.777843)
+				(xy 106.264254 44.979808)
 			)
 		)
 	)
@@ -37948,7 +38005,7 @@
 		(net "Net-(D2-A)")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30015)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)

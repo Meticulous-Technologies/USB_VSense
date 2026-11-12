@@ -56,7 +56,7 @@ The thresholds are calculated from nominal component values, and **there is no p
 | `hardware/KiCAD/USB_VSense_r1/` | Rev. 1 design source (KiCad 10): schematic, PCB and project library |
 | `hardware/KiCAD/USB_VSense_gamma/` | Gamma design source: the OSHWA-certified release, kept for reference |
 | `firmware/MPLABX/usb_vsense_r1_2.X/` | Firmware source (MPLAB X project, XC8), v1.2 |
-| `docs/schematics/USB_VSense_gamma.pdf` | Schematic. It also applies to Rev. 1, which is electrically identical. |
+| `docs/schematics/` | Schematics as PDF: Rev. 1 and Gamma (electrically identical) |
 | `docs/` | EU and UK declarations of conformity, safety guide |
 
 ## Building one
@@ -104,7 +104,8 @@ The firmware is short and well commented. To change the thresholds or blink rate
 |---|---|
 | Hardware (`hardware/`) | [CERN-OHL-S-2.0](hardware/LICENSE_HARDWARE.txt) |
 | Firmware (`firmware/`) | GPL-3.0-only, see [LICENSE_FIRMWARE.txt](firmware/LICENSE_FIRMWARE.txt) |
-| Documentation (`docs/`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| Schematic PDFs (`docs/schematics/`) | [CERN-OHL-S-2.0](hardware/LICENSE_HARDWARE.txt) |
+| Other documentation (`docs/`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
 See [NOTICE](NOTICE) for the source location. The names "Meticulous Technologies" and "USB VSense" and the logos are not covered by these licences; see [TRADEMARK.md](TRADEMARK.md).
 
