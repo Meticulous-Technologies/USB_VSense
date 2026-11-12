@@ -2,7 +2,7 @@
 
 **Meticulous Technologies** and **USB VSense** are trademarks of Meticulous Technologies.
 
-This repository offers open-source hardware and software. While the design files and source code are licensed under open-source licenses (CERN-OHL-S-2.0 and GPL v3), these licenses **do not** grant you the right to use our trademarks, trade names, or logos, except as required for reasonable attribution or as described below.
+This repository offers open-source hardware and software. While the design files and source code are licensed under open-source licenses (CERN-OHL-S-2.0 and GPL-3.0-only), these licenses **do not** grant you the right to use our trademarks, trade names, or logos, except as required for reasonable attribution or as described below.
 
 ## 1. Permitted Use (Nominative Fair Use)
 You may use the names "Meticulous Technologies" or "USB VSense" strictly to refer to this specific project or to describe the origin of a derivative work, provided that the use does not imply endorsement, affiliation, or sponsorship by Meticulous Technologies.
@@ -27,7 +27,7 @@ The design files in this repository (including but not limited to schematics, PC
 The Gamma PCB artwork also contains a third-party PCB manufacturer's logo, which is not ours to license. The open-source licenses do not grant any right to it either. Remove it before manufacturing a derivative or commercial product unless you have the owner's permission.
 
 ## Summary
-* **Code/Design:** Open for everyone (under CERN-OHL-S / GPL v3).
+* **Code/Design:** Open for everyone (under CERN-OHL-S-2.0 / GPL-3.0-only).
 * **Name/Brand:** Reserved for Meticulous Technologies.
 
 If you have questions about using our marks, please contact us.
